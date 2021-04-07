@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="bx-no-touch">
   <head>
-    <title>Main page | seller</title>
+    <title>Catalog full menu | seller</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -463,18 +463,25 @@
     </div>
     <!-- end /components/tuner/-->
     <div class="container-fluid">
-      <hr class="i-size-L">
-      <hr class="i-size-L">
-      <hr class="i-size-L">
-      <h1>Optic Street</h1>
-      <h2>Шапка</h2>
-      <ul>
-        <li><a href="/headers/optic-street/">Optic-street</a></li>
-      </ul>
-      <h2>Кталог</h2>
-      <ul>
-        <li><a href="/catalog/fullmenu/">Full menu</a></li>
-      </ul>
+      <div class="b-catalog-section">
+        <div class="row">
+          <div class="col-md-3 filter">
+            <!-- start /components/catalog.fullmenu/-->
+            <link rel="stylesheet" href="/components/catalog.fullmenu/style.css">
+            <script src="/components/catalog.fullmenu/script.js"></script>
+            <div class="b-catalog-full-menu">
+              <div class="b-catalog-full-menu__head">
+                <div class="b-catalog-full-menu__title">Название блока, может быть в несколько строчек</div>
+                <div style="background-image: url( '/template/images/headers/header_optic-street/menu.svg' );" class="b-catalog-full-menu__icon"></div>
+              </div>
+              <div class="b-catalog-full-menu__content"><a href="">Мужчинам</a><span>Женщинам</span><a href="">Мальчикам</a><a href="">Девочкам</a><a href="">И т.д.</a></div>
+            </div>
+            <!-- end /components/catalog.fullmenu/-->
+          </div>
+          <hr class="visible-sm-block visible-xs-block i-size-L">
+          <div class="col-md-9"></div>
+        </div>
+      </div>
     </div>
     <div id="b-float-phone">
       <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>
