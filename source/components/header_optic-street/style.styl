@@ -262,7 +262,6 @@
     &__sub
       
       &-wrapper
-        border-top 1px solid rgba( 227,227,227,.1 )
         padding 0
         position relative
       
@@ -270,6 +269,9 @@
         display inline-block
         margin-right 55px
         line-height 40px
+
+        @media( max-width 1200px )
+          margin-right 40px
 
         &.i-dropdown
           position relative
@@ -280,7 +282,7 @@
 
       &-menu
         background-color #fff
-        box-shadow( 0px 3px 6px #0000001A )
+        box-shadow( 0px 5px 6px #0000001A )
         padding 30px 50px
         opacity 0
         transition( opacity .5s ease )
@@ -516,7 +518,6 @@
         vertical-align top
         width 16px
         height 16px
-        position relative
         cursor pointer
         position absolute
         top 11px
@@ -545,6 +546,28 @@
           
         &:hover
           opacity .7
+
+        @media( max-width 991px )
+          top 62px
+          right 30px
+          width 24px
+          height 24px
+          display block
+          opacity 0
+          transition( opacity .3s ease )
+          z-index -1
+          
+          &:before
+            transform( rotate( 45deg ))
+            top 12px
+            right -3px
+            width 30px
+            
+          &:after
+            transform( rotate( -45deg ))
+            top 12px
+            right -3px
+            width 30px
 
       @media(max-width 991px)
         display block
@@ -579,6 +602,17 @@
 
       @media (max-width:991px)
         max-width 150px
+
+  .i-search-input-filled
+  
+    .bj-page-header__search
+    
+      &-icon
+        display none
+
+      &-close
+        opacity 1
+        z-index 15
 
   @media (max-width:767px)
     .bj-logo
@@ -670,6 +704,9 @@
     @media( max-width: 767px )
       margin-right 15px
       margin-left 5px !important
+      
+    @media( max-width: 400px )
+      display none !important
 
     span
       display inline-block
@@ -746,6 +783,9 @@
   .bj-cart-icon
     margin-left 12px
     margin-right 20px
+
+    @media( max-width 400px )
+      margin-right 20px !important
     
   .bj-search-icon
     margin-left 10px
@@ -942,8 +982,7 @@
   .bj-page-header__cart-dropdown article
     background-color #fff !important
     
-  .bj-page-header__cart-dropdown .bj-page-header__dropdown-hr,
-  .bj-page-header__sub-wrapper
+  .bj-page-header__cart-dropdown .bj-page-header__dropdown-hr
     border-top-color #f2f2f2
     
   .bj-page-header.i-ready:after
@@ -1004,6 +1043,11 @@
     padding: 0 24px;
     font-size: 15px;
     position: relative;
+  }
+  .ob-catalog-menu__link:focus,
+  .ob-catalog-menu__link:hover,
+  .ob-catalog-menu__link:active {
+    opacity 1 !important
   }
   #OBCatalogMenu a.ob-catalog-menu__link {
     transition: all .3s ease;
