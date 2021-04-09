@@ -64,9 +64,7 @@
         $(".bj-personal-icon").click(function(e) {
             e.preventDefault();
             e.stopPropagation();
-            $(".bj-page-header__sub").slideUp();
             $(".ob-catalog-menu__block").slideUp();
-            $(".bj-page-header__dropdown article:visible").slideUp().removeClass("i-animate");
             $(".bj-page-header__user-dropdown article").slideToggle().toggleClass("i-animate");
             if (window.cartDropdownFlag) {
                 window.cartDropdownFlag = false;
