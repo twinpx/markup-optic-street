@@ -3,7 +3,6 @@
     $(function() {
         $(".bj-search-icon").click(function() {
             $(".bj-page-header").addClass("i-search");
-            $(".bj-page-header__sub:visible").slideUp();
             setTimeout(function() {
                 $(".bj-page-header").addClass("i-ready");
                 $(".bj-page-header__search__input").focus();
@@ -82,9 +81,7 @@
                 e.preventDefault();
                 if (!window.cartDropdownFlag) {
                     window.cartDropdownFlag = true;
-                    $(".bj-page-header__sub").slideUp();
                     $(".ob-catalog-menu__block").slideUp();
-                    $(".bj-page-header__dropdown article:visible").slideUp().removeClass("i-animate");
                     $(".bj-page-header__user-dropdown article").slideUp().removeClass("i-animate");
                     $(".bj-page-header__cart-dropdown article").slideDown();
                     setTimeout(function() {
