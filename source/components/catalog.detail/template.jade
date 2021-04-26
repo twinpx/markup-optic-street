@@ -297,57 +297,77 @@ script( src="/components/catalog.detail/script.js" )
 
         hr.i-size-M.i-line
 
-        
+        style 
+          | .b-catalog-detail__properties-list div {
+          |  margin-bottom: 10px;
+          |  color: #000;
+          | }
+          | .b-catalog-detail__properties-list div:last-child {
+          |  margin-bottom: 0;
+          | }
+          | .b-catalog-detail__properties-list em {
+          |  font-style: normal;
+          |  color: #888;
+          | }
+          | .b-catalog-detail__certificate {
+          |  text-align: center;
+          | }
+          | .b-catalog-detail__certificate img {
+          |  max-width: 50%;
+          |  height: auto;
+          | }
+          | .b-catalog-detail__stores {
+          |  line-height: 1.2;
+          | }
+          | .b-catalog-detail__stores b {
+          |  display: block;
+          | }
+          | .b-catalog-detail__stores a {
+          |  display: block;
+          |  margin-top: 15px;
+          | }
+          | hr.i-size-XL {
+          |  margin-top: 30px;
+          |  margin-bottom: 30px;
+          | }
 
-        .b-catalog-detail__properties
+        .b-catalog-detail__properties-list 
+          div
+            em Размер очков:
+            | 
+            span 61/14/150
+          div
+            em Цвет оправы:
+            | 
+            span серебряный
+          div
+            em Материал оправы:
+            | 
+            span металл
+          div
+            em Цвет линз:
+            | 
+            span зеленый
+          div
+            em Материал линз:
+            | 
+            span поликарбонат
+          div
+            em Назначение:
+            | 
+            span Мужские
 
-        
-
-          a.b-catalog-detail__prop-title( data-toggle="collapse" href="#commentsBlock" aria-expanded="false" aria-controls="commentsBlock" ) Описание
-
-          
-
-          #commentsBlock.b-catalog-detail__prop-collapse Элегантное, слегка укороченное однобортное пальто из верблюжьей шерсти натурального цвета. Натуральные экологичные материалы, классическая модель, идеально сочетающаяся со строгим офисным стилем и деловым casual.
-
-            .catalogDetailProperty1
-
-          
-
-          hr.i-size-S.i-line
-
-          
-
-          a.b-catalog-detail__prop-title( data-toggle="collapse" href="#prop2" aria-expanded="false" aria-controls="prop2" ) Состав
-
-          
-
-          #prop2.collapse.b-catalog-detail__prop-collapse Элегантное, слегка укороченное однобортное пальто из верблюжьей шерсти натурального цвета. Натуральные экологичные материалы, классическая модель, идеально сочетающаяся со строгим офисным стилем и деловым casual.
-
-          
-
-          hr.i-size-S.i-line
-
-          
-
-          a.b-catalog-detail__prop-title( data-toggle="collapse" href="#prop3" aria-expanded="false" aria-controls="prop3" ) Доставка и возврат
-
-          
-
-          #prop3.collapse.b-catalog-detail__prop-collapse Элегантное, слегка укороченное однобортное пальто из верблюжьей шерсти натурального цвета. Натуральные экологичные материалы, классическая модель, идеально сочетающаяся со строгим офисным стилем и деловым casual.
-
-          
-
-          hr.i-size-S.i-line
-
-          
-
-          a.b-catalog-detail__prop-title( data-toggle="collapse" href="#prop4" aria-expanded="false" aria-controls="prop4" ) Собственные свойства
-
-          
-
-          #prop4.collapse.b-catalog-detail__prop-collapse Элегантное, слегка укороченное однобортное пальто из верблюжьей шерсти натурального цвета. Натуральные экологичные материалы, классическая модель, идеально сочетающаяся со строгим офисным стилем и деловым casual.
-
+        hr.i-size-XL.i-line
             
+        .b-catalog-detail__certificate 
+          img( src="/upload/stories.jpg" )
+
+        hr.i-size-XL.i-line
+
+        .b-catalog-detail__stores 
+          b Где купить
+          a( href="" ) Москва, Шоурум
+          a( href="" ) Москва, ТЦ Европейский
 
   #oneClick.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 
@@ -356,8 +376,6 @@ script( src="/components/catalog.detail/script.js" )
       .modal-content
 
         .modal-header
-
-        
 
           button.close(type='button', data-dismiss='modal', aria-label='Close')
 
