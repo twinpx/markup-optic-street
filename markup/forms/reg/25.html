@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="bx-no-touch">
   <head>
-    <title>GUI H1-H6 | Seller</title>
+    <title>Reg form | seller</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -463,99 +463,189 @@
     </div>
     <!-- end /components/tuner/-->
     <div class="container-fluid">
-      <hr class="visible-xs-block i-size-L">
-      <ol class="breadcrumb hidden-xs">
-        <li><a href="/">Главная страница</a></li>
-        <li><span>Заголовки h1-h6</span></li>
-      </ol>
-    </div>
-    <div class="container-fluid">
-      <hr class="i-size-L">
-      <div class="row">
-        <div class="col-sm-4">
-          <h1>Заголовок h1</h1>
-          <div class="h1">Элемент с классом .h1</div>
-          <hr>
-          <h2>Заголовок h2</h2>
-          <div class="h2">Элемент с классом .h2</div>
-          <hr>
-          <h3>Заголовок h3</h3>
-          <div class="h3">Элемент с классом .h3</div>
-          <hr>
-          <h4>Заголовок h4</h4>
-          <div class="h4">Элемент с классом .h4</div>
-          <hr>
-          <h5>Заголовок h5</h5>
-          <div class="h5">Элемент с классом .h5</div>
-          <hr>
-          <h6>Заголовок h6</h6>
-          <div class="h6">Элемент с классом .h6</div>
-        </div>
-        <hr class="i-size-L visible-xs-block">
-        <div class="col-sm-4">
-          <h1>Заголовок h1 <small>+ тэг small</small></h1>
-          <div class="h1">Элемент с классом .h1 <small>+ тэг small</small></div>
-          <hr>
-          <h2>Заголовок h2 <small>+ тэг small</small></h2>
-          <div class="h2">Элемент с классом .h2 <small>+ тэг small</small></div>
-          <hr>
-          <h3>Заголовок h3 <small>+ тэг small</small></h3>
-          <div class="h3">Элемент с классом .h3 <small>+ тэг small</small></div>
-          <hr>
-          <h4>Заголовок h4 <small>+ тэг small</small></h4>
-          <div class="h4">Элемент с классом .h4 <small>+ тэг small</small></div>
-          <hr>
-          <h5>Заголовок h5 <small>+ тэг small</small></h5>
-          <div class="h5">Элемент с классом .h5 <small>+ тэг small</small></div>
-          <hr>
-          <h6>Заголовок h6 <small>+ тэг small</small></h6>
-          <div class="h6">Элемент с классом .h6 <small>+ тэг small</small></div>
-        </div>
-        <hr class="i-size-L visible-xs-block">
-        <div class="col-sm-4">
-          <h1><a href="">Заголовок h1 и ссылка</a></h1>
-          <div class="h1"><a href="">Элемент с классом .h1 и ссылка</a></div>
-          <hr>
-          <h2><a href="">Заголовок h2 и ссылка</a></h2>
-          <div class="h2"><a href="">Элемент с классом .h2 и ссылка</a></div>
-          <hr>
-          <h3><a href="">Заголовок h3 и ссылка</a></h3>
-          <div class="h3"><a href="">Элемент с классом .h3 и ссылка</a></div>
-          <hr>
-          <h4><a href="">Заголовок h4 и ссылка</a></h4>
-          <div class="h4"><a href="">Элемент с классом .h4 и ссылка</a></div>
-          <hr>
-          <h5><a href="">Заголовок h5 и ссылка</a></h5>
-          <div class="h5"><a href="">Элемент с классом .h5 и ссылка</a></div>
-          <hr>
-          <h6><a href="">Заголовок h6 и ссылка</a></h6>
-          <div class="h6"><a href="">Элемент с классом .h6 и ссылка</a></div>
+      <h1>Регистрация</h1>
+      <div class="bx_registration_page">
+        <div class="bx-auth">
+          <noindex>
+            <style>
+              div.bx-auth {
+              width: auto !important;
+              max-width: 100%;
+              }
+              .bx-auth .errortext {
+              height: 30px;
+              background-color: #d65561;
+              color: #fff;
+              line-height: 30px;
+              font-size: 8pt;
+              text-align: center;
+              display: block;
+              }
+              div.bx-auth .btn {
+              min-width: 190px;
+              }
+              .b-form-wrapper {
+              border: 1px solid #f2f2f2;
+              padding: 16px 30px;
+              }
+              .b-form-wrapper-sub-header {
+              border: 1px solid #f2f2f2;
+              line-height: 80px;
+              padding: 0 91px;
+              font-size: 13.5pt;
+              font-weight: 300;
+              margin-bottom: 0;
+              border-bottom: none;
+              }
+              .b-form-wrapper label {
+              margin-bottom: 2px;
+              color: #333;
+              line-height: normal;
+              vertical-align: top;
+              font-size: 8pt;
+              }
+              .b-form-wrapper .form-group {
+              border-bottom: 1px solid #f2f2f2;
+              padding: 0 63px 20px;
+              margin-bottom: 15px;
+              }
+              @media (max-width: 767px) {
+              .b-form-wrapper-sub-header,
+              .b-form-wrapper .form-group {
+              padding-right: 0;
+              padding-left: 0;
+              }
+              }
+              .bx-auth .checkbox label {
+              padding-left: 37px;
+              position: relative;
+              font-weight: normal;
+              font-size: 9pt;
+              line-height: 1.4;
+              }
+              .bx-auth [type="checkbox"]+label {
+              position: relative;
+              padding-left: 35px;
+              cursor: pointer;
+              display: inline-block;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              }
+              .bx-auth [type="checkbox"].filled-in:not(:checked)+label:before {
+              width: 0;
+              height: 0;
+              border: 3px solid transparent;
+              left: 6px;
+              top: 10px;
+              -webkit-transform: rotateZ(37deg);
+              transform: rotateZ(37deg);
+              -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+              }
+              .bx-auth [type="checkbox"].filled-in:checked+label:before {
+              top: 5px;
+              left: 1px;
+              width: 8px;
+              height: 13px;
+              border-top: 2px solid transparent;
+              border-left: 2px solid transparent;
+              border-right: 2px solid #fff;
+              border-bottom: 2px solid #fff;
+              -webkit-transform: rotateZ(37deg);
+              transform: rotateZ(37deg);
+              -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+              }
+              .bx-auth [type="checkbox"]:checked+label:before {
+              top: -4px;
+              left: -5px;
+              width: 12px;
+              height: 22px;
+              border-top: 2px solid transparent;
+              border-left: 2px solid transparent;
+              border-right: 2px solid #26a69a;
+              border-bottom: 2px solid #26a69a;
+              -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+              }
+              .bx-auth [type="checkbox"].filled-in:checked+label:after {
+              top: 3px;
+              width: 20px;
+              height: 20px;
+              border: 2px solid #26a69a;
+              background-color: #26a69a;
+              z-index: 0;
+              }
+              .bx-auth [type="checkbox"].filled-in:not(:checked)+label:after {
+              height: 20px;
+              width: 20px;
+              background-color: transparent;
+              border: 2px solid #5a5a5a;
+              top: 3px;
+              z-index: 0;
+              }
+              .bx-auth [type="checkbox"].filled-in+label:before, .bx-auth [type="checkbox"].filled-in+label:after {
+              content: '';
+              left: 0;
+              position: absolute;
+              -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+              transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+              z-index: 1;
+              }
+              .bx-auth [type="checkbox"].filled-in+label:after {
+              border-radius: 2px;
+              }
+              .bx-auth .checkbox input[type="checkbox"] {
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              top: 7px;
+              left: 0;
+              margin: 0;
+              }
+              .bx-auth [type="checkbox"]:not(:checked), .bx-auth [type="checkbox"]:checked {
+              position: absolute;
+              opacity: 0;
+              pointer-events: none;
+              }
+              @media (max-width: 767px) {
+              .bx-auth .button-block {
+              text-align: center;
+              }
+              }
+            </style>
+            <h3 class="b-form-wrapper-sub-header">&Lcy;&icy;&chcy;&ncy;&ycy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy;</h3>
+            <div class="b-form-wrapper">
+              <form method="post" action="/auth/?register=yes" name="bform">
+                <fieldset>
+                  <legend class="hidden">Защита</legend>
+                  <div style="border-bottom: 0;" class="form-group">
+                    <div style="display: flex; justify-content: space-between;">
+                      <div>
+                        <label style="color: #fff;">*</label><br>
+                        <input type="hidden" name="captcha_sid" value="0346f3552d46ab6868e5957be7a34754"><img src="http://seller-assembly.2px.ru/bitrix/tools/captcha.php?captcha_sid=0346f3552d46ab6868e5957be7a34754" width="180" height="40" alt="CAPTCHA">
+                      </div>
+                      <hr class="visible-xs-block">
+                      <div style="width: calc( 100% - 180px - 20px );">
+                        <label><span class="starrequired">*</span>Введите слово на картинке</label>
+                        <input type="text" name="captcha_word" maxlength="50" value="" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- /CAPTCHA-->
+              </form>
+            </div>
+          </noindex>
         </div>
       </div>
       <hr class="i-size-L">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="b-h2">Элемент с классом .b-h2</div>
-          <div>
-            <h1>Заголовок h1 первый из элементов (:first-child)</h1>
-          </div>
-          <div>
-            <h2>Заголовок h2 первый из элементов (:first-child)</h2>
-          </div>
-          <div>
-            <h3>Заголовок h3 первый из элементов (:first-child)</h3>
-          </div>
-          <div>
-            <h4>Заголовок h4 первый из элементов (:first-child)</h4>
-          </div>
-          <div>
-            <h5>Заголовок h5 первый из элементов (:first-child)</h5>
-          </div>
-          <div>
-            <h6>Заголовок h6 первый из элементов (:first-child)</h6>
-          </div>
-        </div>
-      </div>
     </div>
     <div id="b-float-phone">
       <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>

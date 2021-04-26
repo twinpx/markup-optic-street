@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="bx-no-touch">
   <head>
-    <title>GUI H1-H6 | Seller</title>
+    <title>Личный кабинет | Seller</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -465,97 +465,161 @@
     <div class="container-fluid">
       <hr class="visible-xs-block i-size-L">
       <ol class="breadcrumb hidden-xs">
-        <li><a href="/">Главная страница</a></li>
-        <li><span>Заголовки h1-h6</span></li>
+        <li><a href="/" title="Главная страница">Главная страница</a></li>
+        <li><a href="/personal/index.php" title="Персональный кабинет">Персональный кабинет</a></li>
+        <li><span>Личные данные</span></li>
       </ol>
-    </div>
-    <div class="container-fluid">
-      <hr class="i-size-L">
+      <hr class="visible-xs-block">
+      <h1>Личные данные</h1>
       <div class="row">
-        <div class="col-sm-4">
-          <h1>Заголовок h1</h1>
-          <div class="h1">Элемент с классом .h1</div>
-          <hr>
-          <h2>Заголовок h2</h2>
-          <div class="h2">Элемент с классом .h2</div>
-          <hr>
-          <h3>Заголовок h3</h3>
-          <div class="h3">Элемент с классом .h3</div>
-          <hr>
-          <h4>Заголовок h4</h4>
-          <div class="h4">Элемент с классом .h4</div>
-          <hr>
-          <h5>Заголовок h5</h5>
-          <div class="h5">Элемент с классом .h5</div>
-          <hr>
-          <h6>Заголовок h6</h6>
-          <div class="h6">Элемент с классом .h6</div>
+        <div class="col-sm-2">
+          <!-- start /components/personal.menu/-->
+          <link rel="stylesheet" href="/components/personal.menu/style.css">
+          <div class="b-personal-slide-menu">
+            <div class="b-personal-slide-menu__top"><span>Мои заказы</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 181.42 181.42">
+                <defs>
+                  <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style>
+                </defs>
+                <line x1="4" y1="27.33" x2="176.64" y2="27.33" class="cls-1"></line>
+                <line x1="4" y1="151.01" x2="176.64" y2="151.01" class="cls-1"></line>
+                <line x1="4" y1="89.17" x2="176.64" y2="89.17" class="cls-1"></line>
+              </svg>
+            </div>
+            <div class="b-personal-slide-menu__menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 181.42 181.42">
+                <defs>
+                  <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style>
+                </defs>
+                <polyline points="4 47.17 92.92 131.17 176.64 47.45" class="cls-1"></polyline>
+              </svg>
+              <ul class="personal">
+                <li><a href="/personal/index.php?SECTION=private">Личные данные</a></li>
+                <li><a href="/personal/index.php?SECTION=account">Личный счет</a></li>
+                <li><a href="/about/contacts/">Контакты</a></li>
+                <li><a href="/personal/cart/">Корзина</a></li>
+                <li><span><a href="/personal/index.php?SECTION=orders">Мои заказы</a></span></li>
+                <li><a href="/personal/index.php?SECTION=orders&amp;filter_history=Y">История заказов</a></li>
+                <li><a href="/personal/index.php?SECTION=profile">Профили заказов</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end /components/personal.menu/-->
         </div>
-        <hr class="i-size-L visible-xs-block">
-        <div class="col-sm-4">
-          <h1>Заголовок h1 <small>+ тэг small</small></h1>
-          <div class="h1">Элемент с классом .h1 <small>+ тэг small</small></div>
-          <hr>
-          <h2>Заголовок h2 <small>+ тэг small</small></h2>
-          <div class="h2">Элемент с классом .h2 <small>+ тэг small</small></div>
-          <hr>
-          <h3>Заголовок h3 <small>+ тэг small</small></h3>
-          <div class="h3">Элемент с классом .h3 <small>+ тэг small</small></div>
-          <hr>
-          <h4>Заголовок h4 <small>+ тэг small</small></h4>
-          <div class="h4">Элемент с классом .h4 <small>+ тэг small</small></div>
-          <hr>
-          <h5>Заголовок h5 <small>+ тэг small</small></h5>
-          <div class="h5">Элемент с классом .h5 <small>+ тэг small</small></div>
-          <hr>
-          <h6>Заголовок h6 <small>+ тэг small</small></h6>
-          <div class="h6">Элемент с классом .h6 <small>+ тэг small</small></div>
-        </div>
-        <hr class="i-size-L visible-xs-block">
-        <div class="col-sm-4">
-          <h1><a href="">Заголовок h1 и ссылка</a></h1>
-          <div class="h1"><a href="">Элемент с классом .h1 и ссылка</a></div>
-          <hr>
-          <h2><a href="">Заголовок h2 и ссылка</a></h2>
-          <div class="h2"><a href="">Элемент с классом .h2 и ссылка</a></div>
-          <hr>
-          <h3><a href="">Заголовок h3 и ссылка</a></h3>
-          <div class="h3"><a href="">Элемент с классом .h3 и ссылка</a></div>
-          <hr>
-          <h4><a href="">Заголовок h4 и ссылка</a></h4>
-          <div class="h4"><a href="">Элемент с классом .h4 и ссылка</a></div>
-          <hr>
-          <h5><a href="">Заголовок h5 и ссылка</a></h5>
-          <div class="h5"><a href="">Элемент с классом .h5 и ссылка</a></div>
-          <hr>
-          <h6><a href="">Заголовок h6 и ссылка</a></h6>
-          <div class="h6"><a href="">Элемент с классом .h6 и ссылка</a></div>
+        <div class="col-sm-10">
+          <div class="bx_profile">
+            <form method="post" name="form1" action="/personal/?SECTION=private" enctype="multipart/form-data" role="form">
+              <input id="sessid" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+              <input type="hidden" name="lang" value="s1">
+              <input type="hidden" name="ID" value="1">
+              <input type="hidden" name="LOGIN" value="support@twinpx.ru">
+              <div id="user_div_reg" class="main-profile-block-shown">
+                <div class="main-profile-block-date-info"><span class="small"><span>Дата обновления:</span><span>11.11.2019 13:57:36</span></span><span class="small"><span>Последняя авторизация:</span><span>04.03.2020 12:42:30</span></span></div>
+                <div class="form-group">
+                  <label for="main-profile-name" class="main-profile-form-label">Имя:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-name" type="text" name="NAME" maxlength="50" value="support@twinpx.ru" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="main-profile-last-name" class="main-profile-form-label">Фамилия:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-last-name" type="text" name="LAST_NAME" maxlength="50" value="" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="main-profile-second-name" class="main-profile-form-label">Отчество:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-second-name" type="text" name="SECOND_NAME" maxlength="50" value="" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="main-profile-email" class="main-profile-form-label">E-Mail:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-email" type="text" name="EMAIL" maxlength="50" value="support@twinpx.ru" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="main-profile-form-label">Фотография:</label>
+                  <div class="file-field input-field">
+                    <div class="btn btn-themes btn-default btn-md btn-inverse"><span>Выберите изображение</span>
+                      <input name="PERSONAL_PHOTO" type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" class="file-path validate form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <p class="main-profile-form-password-annotation">Пароль должен быть не менее 6 символов длиной.</p>
+                  <label for="main-profile-password" class="main-profile-form-label">Новый пароль:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-password" type="password" name="NEW_PASSWORD" maxlength="50" value="" autocomplete="off" class="form-control bx-auth-input main-profile-password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="main-profile-password-confirm" class="main-profile-form-label main-profile-password">Подтверждение нового пароля:</label>
+                  <div class="main-profile-form-input">
+                    <input id="main-profile-password-confirm" type="password" name="NEW_PASSWORD_CONFIRM" maxlength="50" value="" autocomplete="off" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <p class="main-profile-form-buttons-block">
+                <input type="submit" name="save" value="Сохранить" class="btn btn-themes btn-default btn-md main-profile-submit">
+                <input type="submit" name="reset" value="Отмена" class="btn btn-themes btn-default btn-md">
+              </p>
+            </form>
+            <div class="col-sm-12 main-profile-social-block">
+              <div class="soc-serv-main">
+                <div class="soc-serv-title-grey">Вы можете связать свой профиль с профилями в социальных сетях и сервисах:</div>
+                <div class="bx-auth-serv-icons"><a id="bx_auth_href_Livejournal" title="Livejournal" href="javascript:void(0)" onclick="BxShowAuthService('Livejournal', '')"><i class="bx-ss-icon livejournal"></i></a><a id="bx_auth_href_MailRuOpenID" title="Mail.Ru OpenID" href="javascript:void(0)" onclick="BxShowAuthService('MailRuOpenID', '')"><i class="bx-ss-icon openid-mail-ru"></i></a><a id="bx_auth_href_Liveinternet" title="Liveinternet" href="javascript:void(0)" onclick="BxShowAuthService('Liveinternet', '')"><i class="bx-ss-icon liveinternet"></i></a><a id="bx_auth_href_Blogger" title="Blogger" href="javascript:void(0)" onclick="BxShowAuthService('Blogger', '')"><i class="bx-ss-icon blogger"></i></a><a id="bx_auth_href_OpenID" title="OpenID" href="javascript:void(0)" onclick="BxShowAuthService('OpenID', '')"><i class="bx-ss-icon openid"></i></a></div>
+                <div class="bx-auth">
+                  <form method="post" name="bx_auth_services" target="_top" action="/personal/?SECTION=private">
+                    <div id="bx_auth_serv" style="display:none" class="bx-auth-service-form">
+                      <div id="bx_auth_serv_Livejournal" style="display:none"><span class="bx-ss-icon livejournal"></span>
+                        <input type="text" name="OPENID_IDENTITY_LIVEJOURNAL" value="" size="20"><span>.livejournal.com</span>
+                        <input id="sessid_1" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+                        <input type="hidden" name="auth_service_error" value="">
+                        <input type="submit" name="" value="Войти" class="button">
+                      </div>
+                      <div id="bx_auth_serv_MailRuOpenID" style="display:none"><span class="bx-ss-icon openid-mail-ru"></span>
+                        <input type="text" name="OPENID_IDENTITY_MAILRU" value="" size="20"><span>@mail.ru</span>
+                        <input id="sessid_2" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+                        <input type="hidden" name="auth_service_error" value="">
+                        <input type="submit" name="" value="Войти" class="button">
+                      </div>
+                      <div id="bx_auth_serv_Liveinternet" style="display:none"><span class="bx-ss-icon liveinternet"></span><span>liveinternet.ru/users/</span>
+                        <input type="text" name="OPENID_IDENTITY_LIVEINTERNET" value="" size="15">
+                        <input id="sessid_3" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+                        <input type="hidden" name="auth_service_error" value="">
+                        <input type="submit" name="" value="Войти" class="button">
+                      </div>
+                      <div id="bx_auth_serv_Blogger" style="display:none"><span class="bx-ss-icon blogger"></span>
+                        <input type="text" name="OPENID_IDENTITY_BLOGGER" value="" size="20"><span>.blogspot.com</span>
+                        <input id="sessid_4" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+                        <input type="hidden" name="auth_service_error" value="">
+                        <input type="submit" name="" value="Войти" class="button">
+                      </div>
+                      <div id="bx_auth_serv_OpenID" style="display:none"><span class="bx-ss-icon openid"></span><span>OpenID:</span>
+                        <input type="text" name="OPENID_IDENTITY_OPENID" value="" size="30">
+                        <input id="sessid_5" type="hidden" name="sessid" value="7109821ca03e35b768c231e562e363b4">
+                        <input type="hidden" name="auth_service_error" value="">
+                        <input type="submit" name="" value="Войти" class="button">
+                      </div>
+                    </div>
+                    <input type="hidden" name="auth_service_id" value="">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </div>
-      <hr class="i-size-L">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="b-h2">Элемент с классом .b-h2</div>
-          <div>
-            <h1>Заголовок h1 первый из элементов (:first-child)</h1>
-          </div>
-          <div>
-            <h2>Заголовок h2 первый из элементов (:first-child)</h2>
-          </div>
-          <div>
-            <h3>Заголовок h3 первый из элементов (:first-child)</h3>
-          </div>
-          <div>
-            <h4>Заголовок h4 первый из элементов (:first-child)</h4>
-          </div>
-          <div>
-            <h5>Заголовок h5 первый из элементов (:first-child)</h5>
-          </div>
-          <div>
-            <h6>Заголовок h6 первый из элементов (:first-child)</h6>
-          </div>
-        </div>
-      </div>
+      <hr class="i-size-L"><a href="http://seller-assembly.2px.ru/personal/index.php?SECTION=private">http://seller-assembly.2px.ru/personal/index.php?SECTION=private</a>
+      <p>Стили на сервере - /bitrix/templates/bejet_seller-1.6.0/components/bitrix/sale.personal.section/new/bitrix/main.profile/.default/style.css</p>
+      <p>Стили в маркапе - /components/main.profile/style.css</p>
+      <p>Стили элементов формы /forms/personal/form-elements-style.styl</p>
     </div>
     <div id="b-float-phone">
       <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>
