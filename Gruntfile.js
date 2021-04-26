@@ -486,6 +486,16 @@ module.exports = function( grunt ) {
           }
         ]
       },
+      dev: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= source %>components/',
+            src: '**/*.js',
+            dest: '<%= dest%>components/',
+          }
+        ]
+      },
       prod: {
         files: [
           {
@@ -590,18 +600,10 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   
   grunt.registerTask( 'css', [ 'stylus:template', 'stylus:components', /*'less:prod',*/ 'concat:pluginsCSS' ]);
-  grunt.registerTask( 'js', [ 'concat:js', /*'jshint:devTemplate', 'jshint:devComponents',*/ 'concat:pluginsJS', 'uglify:devTemplate', 'uglify:devComponents', 'clean:js' ] );
+  grunt.registerTask( 'js', [ 'concat:js', /*'jshint:devTemplate', 'jshint:devComponents',*/ 'concat:pluginsJS', 'uglify:devTemplate', /*'uglify:devComponents',*/ 'copy:dev', 'clean:js' ] );
   grunt.registerTask( 'html', [ 'copy:images', 'jade:dev' ] );
   grunt.registerTask( 'less', [ 'concat:LESS', 'concat:prodLESS', 'copy:prodLESS' ] );
   grunt.registerTask( 'default', [ 'connect', 'css', 'js', 'html', 'watch' ] );
-  
-  //issue tasks
-  grunt.registerTask( 'htmlIssue', [ 'jade:issue' ] );
-  grunt.registerTask( 'cssIssue', [ 'stylus:issue' ] );
-  grunt.registerTask( 'jsIssue', [ /*'jshint:issue', */'uglify:issue' ] );
-  
-  //issues
-  grunt.registerTask( 'iss15918', [ 'connect', 'stylus:iss15918', 'jshint:iss15918', 'uglify:iss15918', 'jade:iss15918', 'watch' ] );
   
   grunt.registerTask( 'prod', [
     'stylus:prod',
@@ -613,11 +615,11 @@ module.exports = function( grunt ) {
     'concat:prod',
     'copy:prodComponents',
     //'jshint:prod',
-    'uglify:prodTemplate',
-    'uglify:prodMinTemplate',
+    //'uglify:prodTemplate',
+    //'uglify:prodMinTemplate',
     'concat:prodPluginsJS',
-    'uglify:prodComponents',
-    'uglify:prodMinComponents',
+    //'uglify:prodComponents',
+    //'uglify:prodMinComponents',
     //images
     'clean:images',
     'copy:tempImages',

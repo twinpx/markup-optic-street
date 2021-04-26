@@ -1,0 +1,118 @@
+﻿// start /components/stories/
+
+script( src="https://unpkg.com/vue@next" )
+script( src="https://unpkg.com/vuex@4" )
+
+link( rel="stylesheet", href="/components/stories/style.css" )
+script( src="/components/stories/script.js" )
+
+.b-stories
+
+  .b-stories__preview 
+
+    .b-stories__preview__item.i-visited( data-id="1" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories.jpg');")
+      .b-stories__preview__text Название первой истории, оно может быть в три строчки текста, но не более
+
+    .b-stories__preview__item( data-id="2" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories2.jpg');")
+      .b-stories__preview__text Регулярная езда на велосипеде имеет ряд преимуществ.
+      
+    .b-stories__preview__item( data-id="3" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories3.jpg');")
+      .b-stories__preview__text При регулярной езде в течение часа вы сможете не только получить.
+
+    .b-stories__preview__item( data-id="4" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories4.jpg');")
+      .b-stories__preview__text Далеко не все потребители знают о том, что можно купить велосипед в интернет-магазине.
+      
+    .b-stories__preview__item( data-id="5" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories5.jpg');")
+      .b-stories__preview__text Новые впечатления от прогулки, но и улучшить физическую форму.
+      
+    .b-stories__preview__item( data-id="6" )
+      .b-stories__preview__img( style="background-image: url('/upload/stories7.jpg');")
+      .b-stories__preview__text Goetze - это стильный городской велосипед.
+
+  .b-stories__gallery
+    .b-stories__gallery__close
+
+    script(src="/template/libs/swiper.min.js") 
+    link(href="/template/libs/swiper.min.css" rel="stylesheet")
+
+    #storiesGallery.swiper-container
+      .swiper-wrapper
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title Название первой истории, оно может быть в три строчки текста, но не более Название первой истории, оно может быть в три строчки текста, но не более Название первой истории, оно может быть в три строчки текста, но не более
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories2.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title Регулярная езда на велосипеде имеет ряд преимуществ.
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories3.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title При регулярной езде в течение часа вы сможете не только получить.
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories4.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title Далеко не все потребители знают о том, что можно купить велосипед в интернет-магазине.
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories5.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title Новые впечатления от прогулки, но и улучшить физическую форму.
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+        .swiper-slide
+          .b-stories-card
+            .b-stories-card__progress-line
+              div 
+              div 
+              div
+            .b-stories-card__media( style="background-image: url('/upload/stories7.jpg');" )
+            .b-stories-card__author( style="background-image: url('/upload/1.jpg');" title="Автор истории" )
+            .b-stories-card__title Goetze - это стильный городской велосипед.
+            .b-stories-card__button
+              a.btn.btn-default( href="" target="_blank") Подробнее 
+
+// end /components/stories/
