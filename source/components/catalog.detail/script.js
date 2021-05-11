@@ -353,7 +353,11 @@
       createGallery
     );
 
-    $('.b-catalog-detail__icons .b-icon-zoom, .b-catalog-detail__gallery').click(function () {
+    $('.b-catalog-detail__icons .b-icon-zoom, .b-catalog-detail__gallery').click(function (e) {
+      if ( e.target.className.search('b-icon-zoom') === -1 && !(e.target.tagName.toLowerCase() === 'img' && e.target.parentNode.tagName.toLowerCase() === 'a' )) {
+        return;
+      }
+      
       var images = '',
         srcBigArray;
 
