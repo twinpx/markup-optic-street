@@ -353,7 +353,7 @@
       createGallery
     );
 
-    $('.b-catalog-detail__icons .b-icon-zoom').click(function () {
+    $('.b-catalog-detail__icons .b-icon-zoom, .b-catalog-detail__gallery').click(function () {
       var images = '',
         srcBigArray;
 
@@ -1287,8 +1287,10 @@
           if (window.location.search) {
             query = parseQuery(window.location.search);
           }
-
-          query.product_id = $div.data('id');
+          
+          if ($dataDivs.length !== 1) {
+            query.product_id = $div.data('id');
+          }
 
           for (var k in query) {
             locationSearch += k + '=' + query[k] + '&';
