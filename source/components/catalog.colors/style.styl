@@ -1,8 +1,12 @@
 @import '../../styl/component-include.styl'
+
 .b-catalog-colors
 
   @media( max-width 767px )
     margin 0 -20px
+
+    button
+      display none
 
   @media( min-width 768px )
 
@@ -10,9 +14,21 @@
       display flex
       align-content space-between
 
+    &.open .swiper-wrapper
+      flex-wrap wrap
+
     .swiper-slide
       width calc( 100% / 6 )
       height auto
+
+  button
+
+    span:last-child,
+    .open& span:first-child 
+      display none
+
+    .open& span:last-child 
+      display inline-block
   
   &__item
     text-align center
