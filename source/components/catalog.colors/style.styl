@@ -1,0 +1,44 @@
+@import '../../styl/component-include.styl'
+.b-catalog-colors
+
+  @media( max-width 767px )
+    margin 0 -20px
+
+  @media( min-width 768px )
+
+    .swiper-wrapper
+      display flex
+      align-content space-between
+
+    .swiper-slide
+      width calc( 100% / 6 )
+      height auto
+  
+  &__item
+    text-align center
+
+    @media( min-width 768px )
+      margin-right 30px
+
+    @media( max-width 767px )
+      padding 0 15px
+
+  &__img
+    background-repeat no-repeat
+    background-position center
+    background-size contain
+    margin-bottom 30px
+    padding-top 50%
+
+  &__title
+    text-align center
+    font-size 12px
+    overflow hidden
+    max-height 45px
+
+  &__price
+    border-top 1px solid #f2f2f2
+    padding-top 15px
+    margin-top 15px
+    font-size 14pt
+    text-align center
