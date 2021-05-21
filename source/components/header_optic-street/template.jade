@@ -50,8 +50,9 @@ script( src="/components/header_optic-street/script.js" )
           .bj-page-header__sub-item.i-menu
             a( href="/lookbook/" ) Оправы
             include header-dropdown-frames
-          .bj-page-header__sub-item
+          .bj-page-header__sub-item.i-menu.i-dropdown
             a( href="/catalog/" ) Распродажа
+            include header-dropdown-sales
           .bj-page-header__sub-item
             a( href="/catalog/" ) Блог
           .bj-page-header__sub-item
@@ -62,7 +63,7 @@ script( src="/components/header_optic-street/script.js" )
           .bj-page-header__sub-item
             a( href="/catalog/" ) Контакты
     
-    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/template/cart-droprown-ajax.html" data-method="GET" )
+    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/ajax-response/header-cart-dropdown-ajax.html" data-method="GET" )
       .i-relative
           article
             .container-fluid

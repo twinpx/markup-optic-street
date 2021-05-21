@@ -15,7 +15,6 @@
       &:hover,
       &:active,
       a:focus
-        color #2f3154
         text-decoration none
 
     @media(max-width 767px)
@@ -189,18 +188,6 @@
         
     .media-body
       text-align left
-
-  .bj-page-header__dropdown,
-  .bj-page-header__user-dropdown
-
-    &,
-    a,
-    a:hover,
-    a:active,
-    a:focus,
-    h3,
-    .h3
-      color #2f3154
       
   .bj-page-header__user-dropdown
 
@@ -279,6 +266,10 @@
           .bj-page-header__sub-menu
             width 200px
             left -44px
+
+            a,
+            span
+              white-space nowrap
 
       &-menu
         background-color #fff
@@ -501,14 +492,7 @@
         border none
         display inline-block
         vertical-align top
-        color #2f3154
         box-sizing( border-box !important )
-        
-        &::placeholder
-          color #2f3154
-          
-        &::-ms-input-placeholder
-          color #2f3154
         
         &:focus
           box-shadow none
@@ -829,15 +813,6 @@
     z-index 1
     
   .bj-page-header__cart-dropdown
-
-    &,
-    a,
-    a:hover,
-    a:active,
-    a:focus,
-    h3,
-    .h3
-      color #2f3154
     
     &-hr
       padding-top 20px
@@ -868,8 +843,6 @@
       font-size 8pt
       
     .btn-default
-      border-color #2f3154
-      color #2f3154
       
       &:hover,
       &:active,
@@ -925,6 +898,9 @@
       height 61px
       background-color #66666633
       margin-right 18px
+      background-repeat no-repeat
+      background-position center
+      background-size contain
     
     b
       display block
