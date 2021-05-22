@@ -5,7 +5,7 @@
   @media( max-width 767px )
     margin 0 -20px
 
-    button
+    &__button
       display none
 
   @media( min-width 768px )
@@ -13,6 +13,7 @@
     .swiper-wrapper
       display flex
       align-content space-between
+      width calc(100% + 30px)
 
     &.open .swiper-wrapper
       flex-wrap wrap
@@ -22,6 +23,7 @@
       height auto
 
   button
+    min-width 200px
 
     span:last-child,
     .open& span:first-child 
@@ -40,6 +42,7 @@
       padding 0 15px
 
   &__img
+    display block
     background-repeat no-repeat
     background-position center
     background-size contain
@@ -47,12 +50,14 @@
     padding-top 50%
 
   &__title
+    display block
     text-align center
     font-size 12px
     overflow hidden
     max-height 45px
 
   &__price
+    display block
     border-top 1px solid #f2f2f2
     padding-top 15px
     margin-top 15px
