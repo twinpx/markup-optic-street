@@ -54,10 +54,8 @@
             String(ui.values[1]).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
         );
         if (
-          1 * $('.bx-filter input.min-price').val() ===
-            1 * $('#priceSliderRange').data('min-value') &&
-          1 * $('.bx-filter input.max-price').val() ===
-            1 * $('#priceSliderRange').data('max-value')
+          1 * ui.values[0] === 1 * $('#priceSliderRange').data('min-value') &&
+          1 * ui.values[1] === 1 * $('#priceSliderRange').data('max-value')
         ) {
           $('.bx-filter input.min-price').val('');
           $('.bx-filter input.max-price').val('');
@@ -80,12 +78,12 @@
           '$1 '
         )
     );
-    $('.bx-filter input.min-price').val(
+    /*$('.bx-filter input.min-price').val(
       $('#priceSliderRange').slider('values', 0)
     );
     $('.bx-filter input.max-price').val(
       $('#priceSliderRange').slider('values', 1)
-    );
+    );*/
 
     if (!('ontouchstart' in document.documentElement)) {
       $('.bx-filter-select-popup').niceScroll();
