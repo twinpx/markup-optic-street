@@ -25,7 +25,7 @@
         } else {
           //button
           colorsBlock
-            .querySelector('.btn')
+            .querySelector('.b-catalog-colors__button .btn')
             .addEventListener('click', function (e) {
               e.preventDefault();
               const container = colorsBlock.querySelector(
