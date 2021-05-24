@@ -54,10 +54,10 @@
             String(ui.values[1]).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
         );
         if (
-          $('.bx-filter input.min-price').val(ui.values[0]) ===
-            $('#priceSliderRange').data('min-value') &&
-          $('.bx-filter input.min-price').val(ui.values[1]) ===
-            $('#priceSliderRange').data('max-value')
+          1 * $('.bx-filter input.min-price').val() ===
+            1 * $('#priceSliderRange').data('min-value') &&
+          1 * $('.bx-filter input.max-price').val() ===
+            1 * $('#priceSliderRange').data('max-value')
         ) {
           $('.bx-filter input.min-price').val('');
           $('.bx-filter input.max-price').val('');
