@@ -16,6 +16,24 @@ script( src="/components/header_optic-street/script.js" )
           .col-md-9.col-sm-6.col-xs-6.bj-logo-space
             span.bj-logo
               img( src='/template/images/logo-os.svg' width='220' alt='Optic Street' )
+
+            script
+              | window.onload = () => {
+              |  //load header-address
+              |  (async () => {
+              |    try {
+              |      let response = await fetch(`/components/header-address/template.html`);
+              |     let html = await response.text();
+              |     const headerAddress = document.createElement('span');
+              |     headerAddress.innerHTML = html;
+              |     document.querySelector('.bj-logo').after(headerAddress);
+              |     let s = document.createElement('script'); s.src = "/components/header-address/script.js"; document.head.appendChild(s);
+              |   } catch (err) {
+              |     throw err;
+              |   }
+              |  })();
+              | };
+              
               
             span.bj-page-header__search
               form( action='/catalog/' )

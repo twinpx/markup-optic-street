@@ -39,7 +39,7 @@ module.exports = function( grunt ) {
               '**/*.jade',
               '!layouts/**/*.jade',
               '!modules/**/*.jade',
-              '!components/**/*.jade'
+              '!components/header_optic-street/*.jade'
             ],
             dest: '<%= dest%>',
             ext: '.html',
