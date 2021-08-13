@@ -1,0 +1,14 @@
+// start /components/catalog.detail.lowprice/
+
+link( rel="stylesheet", href="/components/catalog.detail.lowprice/style.css" )
+
+a( href="#" data-ajax-url="/components/catalog.detail.lowprice/lowPrice.html?somedata=value" data-toggle="modal" data-target="#lowPrice" ) Нашли дешевле?
+
+#lowPrice.modal.fade(tabindex='-1', role='dialog', aria-labelledby='lowPriceLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+        h2#lowPriceLabel.modal-title.text-center Нашли дешевле? Снизим цену!
+
+// end /components/catalog.detail.lowprice/

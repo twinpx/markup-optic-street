@@ -1,0 +1,24 @@
+﻿form(action="/components/catalog.detail/response.json" method="GET")
+  .modal-body
+    p Товар в другом магазине должен быть идентичным по цвету и размеру и в наличии.
+    .form-group
+      label Как к Вам обращаться?
+      input.bx-auth-input.form-control(type="text" name="USER_NAME" maxlength="50" value="" required="")
+    .form-group
+      label Контактный телефон
+      input.bx-auth-input.form-control(type="tel" name="USER_TEL" maxlength="50" value="" required="")
+    .form-group
+      label Электронная почта
+      input.bx-auth-input.form-control(type="mail" name="USER_EMAIL" maxlength="50" value="" required="")
+    .form-group
+      label Название товара
+      input.bx-auth-input.form-control(type="text" name="GOOD_TITLE" maxlength="50" value="" required="")
+    .form-group
+      label Ссылка на товар другого магазина*
+      input.bx-auth-input.form-control(type="text" name="GOOD_LINK" maxlength="50" value="" required="")
+  .modal-footer.text-center
+    button.btn.btn-default(type="submit") Отправить
+    button.btn.btn-default.i-gray(type="button" data-dismiss="modal" aria-label="Close") Продолжить покупки
+    
+  script
+    | window.lowPriceOrderId = "SOME_ID"

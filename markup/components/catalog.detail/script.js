@@ -353,11 +353,19 @@
       createGallery
     );
 
-    $('.b-catalog-detail__icons .b-icon-zoom, .b-catalog-detail__gallery').click(function (e) {
-      if ( e.target.className.search('b-icon-zoom') === -1 && !(e.target.tagName.toLowerCase() === 'img' && e.target.parentNode.tagName.toLowerCase() === 'a' )) {
+    $(
+      '.b-catalog-detail__icons .b-icon-zoom, .b-catalog-detail__gallery'
+    ).click(function (e) {
+      if (
+        e.target.className.search('b-icon-zoom') === -1 &&
+        !(
+          e.target.tagName.toLowerCase() === 'img' &&
+          e.target.parentNode.tagName.toLowerCase() === 'a'
+        )
+      ) {
         return;
       }
-      
+
       var images = '',
         srcBigArray;
 
@@ -1291,7 +1299,7 @@
           if (window.location.search) {
             query = parseQuery(window.location.search);
           }
-          
+
           if ($dataDivs.length !== 1) {
             query.product_id = $div.data('id');
           }
@@ -1317,9 +1325,8 @@
 
     function parseQuery(queryString) {
       var query = {};
-      var pairs = (queryString[0] === '?'
-        ? queryString.substr(1)
-        : queryString
+      var pairs = (
+        queryString[0] === '?' ? queryString.substr(1) : queryString
       ).split('&');
       for (var i = 0; i < pairs.length; i++) {
         var pair = pairs[i].split('=');

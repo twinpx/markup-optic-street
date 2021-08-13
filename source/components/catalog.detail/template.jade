@@ -3,6 +3,24 @@
 link( rel="stylesheet", href="/components/catalog.detail/style.css" )
 script( src="/components/catalog.detail/script.js" )
 
+script
+  | window.onload = () => {
+  |  //load lowPrice
+  |  (async () => {
+  |    try {
+  |     let response = await fetch(`/components/catalog.detail.lowprice/template.html`);
+  |     let html = await response.text();
+  |     const lowPrice = document.createElement('div');
+  |     lowPrice.classList.add('b-catalog-detail__lowprice');
+  |     lowPrice.innerHTML = html;
+  |     document.querySelector('.b-catalog-detail__button-block').after(lowPrice);
+  |     let s = document.createElement('script'); s.src = "/components/catalog.detail.lowprice/script.js"; document.head.appendChild(s);
+  |   } catch (err) {
+  |     throw err;
+  |   }
+  |  })();
+  | };
+
 .b-catalog-detail
 
   #buyDetailPopup
@@ -272,31 +290,19 @@ script( src="/components/catalog.detail/script.js" )
 
             a( href="#" data-ajax-url="/components/catalog.detail/oneClick.html?somedata=value" data-toggle="modal" data-target="#oneClick" ) Купить в 1 клик
 
-            
-
             include ../../modules/ecommerce/catalog-detail
+
+        //lowprice
 
         hr.i-size-S
 
-          
-
         .b-catalog-detail__num
-
-        
-
           .b-catalog-detail__num__y В наличии:
-
             | 
-
             span#catalogDetailNum 6
-
             | 
-
             | шт.
-
           .b-catalog-detail__num__n Нет в наличии.
-
-        
 
         hr.i-size-M.i-line
 
@@ -376,21 +382,22 @@ script( src="/components/catalog.detail/script.js" )
           a( href="" ) Москва, Шоурум
           a( href="" ) Москва, ТЦ Европейский
 
-  #oneClick.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
 
+  #oneClick.modal.fade(tabindex='-1', role='dialog', aria-labelledby='oneClickLabel')
     .modal-dialog(role='document')
-
       .modal-content
-
         .modal-header
-
           button.close(type='button', data-dismiss='modal', aria-label='Close')
-
           h2#myModalLabel.modal-title.text-center Купить 1 клик
 
           
+  #lowPrice.modal.fade(tabindex='-1', role='dialog', aria-labelledby='lowPriceLabel')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+          h2#lowPriceLabel.modal-title.text-center Нашли дешевле? Снизим цену!
 
-                  
 
   div( itemscope='', itemtype='http://schema.org/Product', style='display: none' )
 

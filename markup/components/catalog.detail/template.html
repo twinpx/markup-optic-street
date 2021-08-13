@@ -2,6 +2,24 @@
 <!-- start /components/catalog.detail/-->
 <link rel="stylesheet" href="/components/catalog.detail/style.css"/>
 <script src="/components/catalog.detail/script.js"></script>
+<script>
+  window.onload = () => {
+   //load lowPrice
+   (async () => {
+     try {
+      let response = await fetch(`/components/catalog.detail.lowprice/template.html`);
+      let html = await response.text();
+      const lowPrice = document.createElement('div');
+      lowPrice.classList.add('b-catalog-detail__lowprice');
+      lowPrice.innerHTML = html;
+      document.querySelector('.b-catalog-detail__button-block').after(lowPrice);
+      let s = document.createElement('script'); s.src = "/components/catalog.detail.lowprice/script.js"; document.head.appendChild(s);
+    } catch (err) {
+      throw err;
+    }
+   })();
+  };
+</script>
 <div class="b-catalog-detail">
   <div id="buyDetailPopup">
     <div id="buyDetailPopupOpaco"></div>
@@ -395,6 +413,7 @@
             </script>
           </div>
         </div>
+        <!--lowprice-->
         <hr class="i-size-S"/>
         <div class="b-catalog-detail__num">
           <div class="b-catalog-detail__num__y">
@@ -459,12 +478,22 @@
       </div>
     </div>
   </div>
-  <div id="oneClick" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+  <div id="oneClick" tabindex="-1" role="dialog" aria-labelledby="oneClickLabel" class="modal fade">
     <div role="document" class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
           <h2 id="myModalLabel" class="modal-title text-center">Купить 1 клик</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lowPrice" tabindex="-1" role="dialog" aria-labelledby="lowPriceLabel" class="modal fade">
+    <div role="document" class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+          <h2 id="lowPriceLabel" class="modal-title text-center">Нашли дешевле? Снизим цену!</h2>
         </div>
       </div>
     </div>
