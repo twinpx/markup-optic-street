@@ -23,7 +23,7 @@
             }
             //Yandex Metrika
             if (ym && ymID) {
-              ym(ymID, 'reachGoal', 'goal_1click_begin');
+              ym(ymID, 'reachGoal', 'goal_lowprice_begin');
             }
           },
           error: function (a, b, c) {
@@ -59,10 +59,9 @@
             $('#lowPrice .modal-footer .btn').hide();
             $('#lowPrice .modal-footer .i-gray').show();
             //ecommerce event trigger
-            $('#lowPrice').trigger('onClickSuccess.ecommerce');
             //Yandex Metrika
             if (ym && ymID) {
-              ym(ymID, 'reachGoal', 'goal_1click_success'); //Покупка в 1 клик успешно завершена
+              ym(ymID, 'reachGoal', 'goal_lowprice_success'); //Покупка в 1 клик успешно завершена
             }
           }
         },
