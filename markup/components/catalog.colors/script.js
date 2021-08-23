@@ -24,15 +24,12 @@
           );
         } else {
           //button
-          colorsBlock
-            .querySelector('.b-catalog-colors__button .btn')
-            .addEventListener('click', function (e) {
-              e.preventDefault();
-              const container = colorsBlock.querySelector(
-                '.b-catalog-colors__container'
-              );
-              colorsBlock.classList.toggle('open');
-            });
+          let btn = colorsBlock.querySelector('.b-catalog-colors__button .btn');
+          if (!btn) return;
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            colorsBlock.classList.toggle('open');
+          });
         }
       });
   });
