@@ -18,7 +18,7 @@ script( src="/components/header_optic-street/script.js" )
               img( src='/template/images/logo-os.svg' width='220' alt='Optic Street' )
 
             script
-              | window.onload = () => {
+              | window.addEventListener('load', () => {
               |  //load header-address
               |  (async () => {
               |    try {
@@ -32,7 +32,7 @@ script( src="/components/header_optic-street/script.js" )
               |     throw err;
               |   }
               |  })();
-              | };
+              | });
               
               
             span.bj-page-header__search

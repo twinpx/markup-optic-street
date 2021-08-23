@@ -36,7 +36,7 @@
               <div class="col-xs-3 col-sm-3 visible-sm-block visible-xs-block"><a href="#" class="ob-menu-sandwich bj-nav-button"><span style="background-image: url( '/template/images/headers/header_optic-street/menu.svg' );" class="bj-menu-icon"></span></a></div>
               <div class="col-md-9 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img src="/template/images/logo-os.svg" width="220" alt="Optic Street"></span>
                 <script>
-                  window.onload = () => {
+                  window.addEventListener('load', () => {
                    //load header-address
                    (async () => {
                      try {
@@ -50,7 +50,7 @@
                       throw err;
                     }
                    })();
-                  };
+                  });
                 </script><span class="bj-page-header__search">
                   <form action="/catalog/"><span style=" background-image: url( '/template/images/headers/header_optic-street/search.svg' );" class="bj-page-header__search-icon"></span>
                     <input id="title-search-input" type="search" name="q" size="23" maxlength="50" autocomplete="off" value="" placeholder="Поиск по каталогу" class="bj-page-header__search__input form-control">

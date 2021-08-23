@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/components/catalog.detail/style.css"/>
 <script src="/components/catalog.detail/script.js"></script>
 <script>
-  window.onload = () => {
+  window.addEventListener('load', () => {
    //load lowPrice
    (async () => {
      try {
@@ -18,7 +18,7 @@
       throw err;
     }
    })();
-  };
+  });
 </script>
 <div class="b-catalog-detail">
   <div id="buyDetailPopup">

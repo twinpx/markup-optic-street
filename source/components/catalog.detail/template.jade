@@ -4,7 +4,7 @@ link( rel="stylesheet", href="/components/catalog.detail/style.css" )
 script( src="/components/catalog.detail/script.js" )
 
 script
-  | window.onload = () => {
+  | window.addEventListener('load', () => {
   |  //load lowPrice
   |  (async () => {
   |    try {
@@ -19,7 +19,7 @@ script
   |     throw err;
   |   }
   |  })();
-  | };
+  | });
 
 .b-catalog-detail
 
