@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="bx-no-touch">
   <head>
-    <title>GUI | Seller</title>
+    <title>Catalog section | Seller</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -492,41 +492,243 @@
     </div>
     <!-- end /components/tuner/-->
     <div class="container-fluid">
-      <hr class="i-size-L">
-      <h1>Несколько слов вначале…</h1>
-      <p>«Фродо жив!» - объявили всему миру надписи на стенах нью-йоркской «подземки», и миллионы почитателей творчества Дж. Р. Р. Толкиена восторженно подхватили призыв. Так в середине 60-х годов вспыхнул «культ Толкиена». <a href="">Начало его можно установить довольно точно - лето 1965 года, когда американской аудитории (в основном, студенческой)</a> не хватило и миллионного тиража «Властелина Колец» - несомненно, самой популярной из толкиеновских книг. Для тысяч молодых американцев история хоббита Фродо и Кольца Всевластья стала лучшей книгой на свете. В конце 1966-го одна из газет сообщала: «В Йеле трилогия раскупается быстрее, чем некогда „Повелитель мух" Голдинга. В Гарварде она опережает „Над пропастью во ржи" Сэлинджера».</p>
-      <p>На самодельных значках запестрели надписи:</p>
-      <ul>
-        <li>«Да здравствует Фродо!»</li>
-        <li>«Гэндальфа - в президенты!»</li>
-        <li>«Идем в Среднеземье!»</li>
-      </ul>
-      <p>На западном побережье и в штате Нью-Йорк как грибы множились толкиеновские общества. Фэн-клубы устраивали вечеринки, на которых одевались по хоббитской моде, а угощались</p>
-      <ol>
-        <li>грибами</li>
-        <li>и сидром.</li>
+      <hr class="visible-xs-block i-size-L">
+      <ol class="breadcrumb hidden-xs">
+        <li><a href="/" title="Главная страница">Главная страница</a></li>
+        <li><a href="/catalog/" title="Каталог">Каталог</a></li>
+        <li><a href="/catalog/muzhchinam/" title="Мужчинам">Мужчинам</a></li>
+        <li><a href="/catalog/shoes/" title="Обувь">Обувь</a></li>
+        <li><a href="/catalog/muzhskie_botinki/" title="Мужские ботинки">Мужские ботинки</a></li>
+        <li><span>Кожанные ботинки</span></li>
       </ol>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>Солнцезащитные очки</h1>
+          </div>
+          <div class="col-sm-4">
+            <div class="b-catalog-tags"></div>
+          </div>
+        </div>
+        <div class="b-catalog-section">
+          <div class="row">
+            <div class="col-md-3">
+              <div style="background-color: #f2f2f2; height: 200px;"></div>
+            </div>
+            <hr class="visible-sm-block visible-xs-block i-size-L">
+            <div class="col-md-9 bj-catalogue-group">
+              <!-- start /components/catalog.filter/-->
+              <link rel="stylesheet" href="/template/libs/jquery-ui-1.11.1.min.css">
+              <script src="/template/libs/jquery-ui-1.11.1.min.js"></script>
+              <link rel="stylesheet" href="/components/catalog.section/style.css">
+              <script src="/components/catalog.section/script.js"></script>
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- noindex-->
+                  <div class="bj-sorting">
+                    <div class="text-muted">Сортировка:</div>
+                    <div class="dropdown"><a id="dLabel" href="#" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">Увеличению цены<span class="caret"></span></a>
+                      <ul role="menu" aria-labelledby="dLabel" class="dropdown-menu">
+                        <li><a href="/catalog/solntsezashchitnye_ochki/?sort=popular&amp;amp;utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306#sort">Популярные</a></li>
+                        <li><a href="/catalog/solntsezashchitnye_ochki/?sort=name&amp;amp;utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306#sort">Алфавиту</a></li>
+                        <li><a href="/catalog/solntsezashchitnye_ochki/?sort=cheap&amp;amp;utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306#sort">Увеличению цены</a></li>
+                        <li><a href="/catalog/solntsezashchitnye_ochki/?sort=dearly&amp;amp;utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306#sort">Уменьшению цены</a></li>
+                        <!-- <li><a href="/catalog/solntsezashchitnye_ochki/?sort=new&utm_source=yandex&utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&utm_medium=cpc&utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&utm_content=name_4085683729%7C10169739205_10169739205_0&yclid=5402703580288289306#sort">Новые</a></li>-->
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- /noindex-->
+                </div>
+                <hr class="visible-xs">
+                <div class="col-sm-6 text-right">
+                  <div data-pagination-num="1">
+                    <div data-pagination-num="2" class="b-pagination">
+                      <div class="b-pagination-block"><span class="active">1</span><a href="/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306&amp;amp;PAGEN_1=2">2</a><a href="/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306&amp;amp;PAGEN_1=3">3</a><span>...</span><a href="/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306&amp;amp;PAGEN_1=90">90</a><a href="/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306&amp;amp;PAGEN_1=91">91</a><a href="/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;amp;utm_medium=cpc&amp;amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;amp;yclid=5402703580288289306&amp;amp;PAGEN_1=2" class="i-forward">Следующая</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="i-line i-size-L">
+              <div data-entity="container-1" class="catalog-section bx-blue b-catalog-collection">
+                <!-- items-container-->
+                <div data-entity="items-row" data-variant="3" class="row product-item-list-col-4">
+                  <div class="col-xs-12">
+                    <div class="product-item-small-card">
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div class="b-catalog-element__sale-label">-10%</div>
+                        <div style="background-image: url('/template/images/available-y.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__props-icons">
+                            <div style="background-color: #FF0000;" class="b-prop">Распродажа</div>
+                          </div>
+                          <div class="b-catalog-element__price i-discount"><span>1&nbsp;530 ₽</span>
+                            <s>2&nbsp;550 ₽</s>
+                          </div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__props-icons">
+                            <div style="background-color: #FF0000;" class="b-prop">Распродажа</div>
+                            <div style="background-color: #5D33A5;" class="b-prop">НОВИНКА</div>
+                            <div style="background: transparent linear-gradient(90deg, #0076FF 0%, #FF0000 100%) 0% 0% no-repeat padding-box;" class="b-prop">ПОЛЯРИЗАЦИЯ</div>
+                            <div style="background-color: #44B6E5;" class="b-prop">ДЕТСКИЕ</div>
+                            <div style="background-color: #F7F03D; color: #5D33A5;" class="b-prop">ХИТ</div>
+                          </div>
+                          <div class="b-catalog-element__price i-discount"><span>1&nbsp;530 ₽</span>
+                            <s>2&nbsp;550 ₽</s>
+                          </div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                      <div itemscope="" itemtype="http://schema.org/Product" id="" data-entity="item" data-id="41760" class="b-catalog-element">
+                        <div style="background-image: url('/template/images/available-n.svg')" class="b-catalog-element__availability-label"></div>
+                        <div class="b-catalog-element__head">
+                          <div itemprop="image" class="b-catalog-element__img"><a href="/catalog/detail/" itemprop="image" title="PLD P0300 TCS Y2 42" class="b-catalog-element__img-hover"></a></div>
+                        </div>
+                        <div class="b-catalog-element__body"><a href="/catalog/detail/" itemprop="name" title="Очки Polaroid  PLD P0300 TCS Y2 42" class="b-catalog-element__title">Очки Polaroid  PLD P0300 TCS Y2 42</a>
+                          <div class="b-catalog-element__price">1&nbsp;530 ₽</div>
+                          <div class="b-catalog-element__buttons-block">
+                            <div class="b-catalog-element__button"><a href="/personal/cart/" data-toggle="modal" data-target="#buyModal" data-ajax-url="" class="btn btn-default btn-size-S"><span class="i-show">Купить</span><span>В корзине</span></a></div>
+                            <div class="b-catalog-element__subscribe hidden"><a href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="" class="btn btn-default btn-size-S">Подписаться</a></div>
+                          </div>
+                        </div>
+                        <div data-actual-item="41760" data-prop-list="[{}]" data-category="Солнцезащитные очки" data-brand="" class="b-catalog-element__data">
+                          <div data-id="41760" data-price="1&amp;nbsp;530 ₽" data-cur="RUB" data-discount-diff="1&amp;nbsp;020 ₽" data-discount-percent="40%" data-old-price="2&amp;nbsp;550 ₽" data-photo="https://optic-street.ru/upload/iblock/f21/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-big-photo="https://optic-street.ru/upload/resize_cache/iblock/f21/570_570_1/qmhwv8blo35wlamnv0cc99djexrvo3lb.jpg" data-available="Y" data-subscribe="Y" data-num="1" data-num-type="N" data-num-num="1" data-incart="N"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-list__more">
+                    <div data-url="/components/catalog.section/response.html?PAGEN_1=2" data-method="GET" class="btn btn-default btn-size-S i-gray">Загрузить еще</div>
+                  </div>
+                </div>
+              </div>
+              <div id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeLabel" class="modal fade">
+                <div role="document" class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"></span></button>
+                      <div id="subscribeLabel" class="h2 modal-title text-center">Подписаться</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="buyCatalogElementPopup">
+                <div id="buyCatalogElementPopupOpaco"></div>
+                <div id="buyCatalogElementPopupWindow">
+                  <div class="b-catalog-element-popup__close"></div>
+                  <div class="b-catalog-element-popup__body">Товар добавлен в корзину,<a href="/personal/cart/">оформить заказ.</a></div>
+                </div>
+              </div>
+              <!-- end /components/catalog.filter/-->
+            </div>
+          </div>
+          <hr class="i-size-L">
+        </div>
+        <hr>
+      </div>
       <hr class="i-size-L">
-      <h2>Человек, понимающий хоббитов</h2>
-      <p>К 1968 году только в Америке разошлось более трех миллионов экземпляров трилогии. Тогда же «Дэйли телеграф мэгэзин» опубликовал статью «Человек, понимающий хоббитов». В ней говорилось: «Большинство поклонников Толкиена - из породы высоколобых, но не только они любят его. Ему пишут и домохозяйки из Виннипега, и ракетчики из Вумера, и звезды эстрады из Лас-Вегаса. Отцы семейств обсуждают трилогию в лондонских пивных. Германия, Испания, Португалия, Польша, Япония, Израиль, Швеция, Голландия, Дания читают его на родных языках».</p>
-      <h3>Тайна</h3>
-      <p>Говорить о Толкиене легко, - особенно с теми, кто уже читал его книги и, значит, причастен этой радостной тайне…</p>
-      <h3>Добрый сказочник</h3>
-      <p>Рассказать о Джоне Рональде Руэле Толкиене, всемирно известном английском писателе, профессоре Оксфордского университета, добром сказочнике, мудром философе, христианине, - трудно. Недаром сам он был убежден, что подлинная история писателя содержится в его книгах, а не в фактах биографии.</p>
-      <hr class="i-size-L">
-      <h2>Биография</h2>
-      <p>Дж. Р. Р. Толкиен родился 3 января 1892 года в Блумфонтейне (Оранжевая Республика, Южная Африка). Там работал в то время его отец, Артур Руэл Толкиен. Весной 1895 года мать увезла Рональда и его младшего брата в Англию, а в феврале 1896 пришла телеграмма, сообщающая о смерти Артура Руэла.</p>
-      <h3>Начало жизни</h3>
-      <p>Осиротевшая семья с весьма скромными средствами поселилась в пригороде Бирмингема. В начале века местечко это было тихой зеленой английской глубинкой; дом Толкиенов стоял последним, а сразу за ним начинались поля, холмы, перелески - словом, мальчишечий рай. Дж. Р. Р. (так звали писателя его друзья) начал читать в четыре года, а чуть позже - писать. Первые уроки латыни пробудили любовь к языкам, определившую много лет спустя выбор жизненного пути. В звучании латинского языка мальчику чудилась музыка, гармония, ждущая разгадки тайна… Пожалуй, что-то похожее он испытывал, когда читал волшебные сказки или героические легенды, действие которых происходило на узкой границе между мифом и реальной историей. «Только, - писал он уже взрослым одному из своих корреспондентов, - в этом мире их было, на мой взгляд, слишком мало, чтобы насытить мой голод».</p>
-      <h3>Школьные годы</h3>
-      <p>В школе к знакомым с детства латыни и французскому прибавились греческий и немецкий, но теперь Рональда все сильнее привлекали история языков и сравнительная филология. Он начал изучать древний английский, чуть позже - древнегерманский и древнефинский, исландский и готский. Он занимался в школьном литературном кружке, придумывал новые языки, собирал вокруг себя «компании» и «сообщества», играл в регби.</p>
-      <hr>
-      <h3>Университет</h3>
-      <p>В ноябре 1904 года умерла мать. Рональд и его младший брат Хилари остались на попечении духовного отца, Фрэнсиса Моргана. Его заботами мальчики получили возможность закончить школу, а Рональд - даже продолжить образование в Оксфордском университете, на факультете английского языка и литературы. Он специализировался по истории языка, по древнему и средневековому английскому.</p>
-      <h3>Первая мировая война</h3>
-      <p>Первая мировая война застала его студентом последнего курса. Летом 1915 года он блестяще сдал выпускные экзамены и ушел добровольцем в действующую армию. На долю младшего лейтенанта связи одиннадцатого батальона Ланкаширских стрелков выпало четыре месяца кровавой бойни при Сомме, а потом - два года скитаний по госпиталям с жестоким окопным тифом.</p>
-      <h3>Демобилизация</h3>
-      <p>После демобилизации он успел поработать и в Оксфорде над составлением Большого Словаря английского языка, и в Лидском университете - сначала преподавателем, потом профессором английского языка. В 1925 году опубликовал собственное переложение одной из легенд «артуровского цикла» - «Сэр Гавэйн и Зеленый Рыцарь». Летом того же года Толкиена приглашают в Оксфорд профессором англосаксонского языка. Непривычно молодой по оксфордским меркам профессор - ему всего тридцать четыре года - имеет за плечами немалый жизненный опыт, блестящие работы по филологии, семью, состоящую из жены Эдит Брэгг («Она была моей Лучиэнь и знала это», - говорил Толкиен) и троих сыновей - Джона, Майкла и Кристофера. Несколько лет спустя родилась дочь Присцилла. Средств не хватало, зато забот было с избытком.</p>
     </div>
     <div id="b-float-phone">
       <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>

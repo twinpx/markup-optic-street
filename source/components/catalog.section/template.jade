@@ -1,0 +1,80 @@
+﻿// start /components/catalog.filter/
+
+link( rel="stylesheet", href="/template/libs/jquery-ui-1.11.1.min.css" )
+script( src="/template/libs/jquery-ui-1.11.1.min.js" )
+
+link( rel="stylesheet", href="/components/catalog.section/style.css" )
+script( src="/components/catalog.section/script.js" )
+
+.row
+  .col-sm-6
+    // noindex
+    .bj-sorting
+      .text-muted Сортировка:
+      .dropdown
+        a#dLabel(href='#' role='button' data-toggle='dropdown' data-target='#' aria-expanded='false')
+          | Увеличению цены
+          span.caret
+        ul.dropdown-menu(role='menu' aria-labelledby='dLabel')
+          li
+            a(href='/catalog/solntsezashchitnye_ochki/?sort=popular&amp;utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306#sort') Популярные
+          li
+            a(href='/catalog/solntsezashchitnye_ochki/?sort=name&amp;utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306#sort') Алфавиту
+          li
+            a(href='/catalog/solntsezashchitnye_ochki/?sort=cheap&amp;utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306#sort') Увеличению цены
+          li
+            a(href='/catalog/solntsezashchitnye_ochki/?sort=dearly&amp;utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306#sort') Уменьшению цены
+          // <li><a href="/catalog/solntsezashchitnye_ochki/?sort=new&utm_source=yandex&utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&utm_medium=cpc&utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&utm_content=name_4085683729%7C10169739205_10169739205_0&yclid=5402703580288289306#sort">Новые</a></li>
+      .clearfix
+    // /noindex
+  hr.visible-xs
+  .col-sm-6.text-right
+    div(data-pagination-num='1')
+      .b-pagination(data-pagination-num='2')
+        .b-pagination-block
+          span.active 1
+          a(href='/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306&amp;PAGEN_1=2') 2
+          a(href='/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306&amp;PAGEN_1=3') 3
+          span ...
+          a(href='/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306&amp;PAGEN_1=90') 90
+          a(href='/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306&amp;PAGEN_1=91') 91
+          a.i-forward(href='/catalog/solntsezashchitnye_ochki/?utm_source=yandex&amp;utm_campaign=vd_yd_brendovye-ochki_search_tgo_cpc_key_all_msk_all_day&amp;utm_medium=cpc&amp;utm_term=%D0%BE%D1%87%D0%BA%D0%B8+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B&amp;utm_content=name_4085683729%7C10169739205_10169739205_0&amp;yclid=5402703580288289306&amp;PAGEN_1=2') Следующая
+hr.i-line.i-size-L
+.catalog-section.bx-blue.b-catalog-collection(data-entity='container-1')
+
+  // items-container
+  .row.product-item-list-col-4(data-entity='items-row' data-variant='3')
+
+    .col-xs-12
+    
+      .product-item-small-card
+      
+        include item
+        include item-sale
+        include item-props
+        include item 
+
+        include item
+        include item
+        include item
+        include item 
+
+    .product-item-list__more
+      .btn.btn-default.btn-size-S.i-gray( data-url="/components/catalog.section/response.html?PAGEN_1=2" data-method="GET" ) Загрузить еще
+
+#subscribeModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='subscribeLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true')
+        #subscribeLabel.h2.modal-title.text-center Подписаться
+#buyCatalogElementPopup
+  #buyCatalogElementPopupOpaco
+  #buyCatalogElementPopupWindow
+    div(class='b-catalog-element-popup__close')
+    div(class='b-catalog-element-popup__body')
+      | Товар добавлен в корзину,
+      a(href='/personal/cart/') оформить заказ.
+
+// end /components/catalog.filter/

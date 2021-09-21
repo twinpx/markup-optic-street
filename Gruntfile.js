@@ -93,7 +93,8 @@ module.exports = function( grunt ) {
             [
               '<%= source%>styl/template_styles.styl',
               '<%= source%>modules/**/*.styl'
-            ]
+            ],
+          '<%= dest%>template/custom.css': '<%= source%>styl/custom.styl'
         }
       },
       components: {
@@ -127,7 +128,8 @@ module.exports = function( grunt ) {
                 '<%= source%>styl/template_styles.styl',
                 '<%= source%>modules/**/*.styl'
               ],
-            '<%= temp%>template/colors.css': '<%= source%>styl/colors.styl'
+            '<%= temp%>template/colors.css': '<%= source%>styl/colors.styl',
+            '<%= temp%>template/custom.css': '<%= source%>styl/custom.styl'
           }
         ]
       }
