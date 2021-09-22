@@ -45,7 +45,7 @@
           }
           //url
           if (window.history && url) {
-            window.history.pushState({}, '', url);
+            window.history.replaceState({}, '', url);
           }
           //effect
           div
