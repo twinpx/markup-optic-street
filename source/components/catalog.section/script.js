@@ -47,9 +47,7 @@
               .parentNode.replaceChildren(div.querySelector('.b-pagination'));
           }
           //effect
-          div
-            .querySelector('.product-item-small-card')
-            .classList.add('product-item-small-card--show-elements');
+          productItemSmallCard.classList.add('product-item-small-card--show-elements');
           //scroll
           window.scrollTo({
             top: div.getBoundingClientRect().top + window.scrollY - 30,
