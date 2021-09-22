@@ -11,8 +11,10 @@
       var url = button.getAttribute('data-url');
       var method = button.getAttribute('data-method');
 
-      //set page url
-      window.location.search = url.substring(url.indexOf('?'));
+      //url
+      if (window.history && url) {
+        window.history.replaceState({}, '', url);
+      }
 
       $.ajax({
         url: url,
@@ -42,10 +44,6 @@
           if (container.querySelector('.b-pagination')) {
             container.querySelector('.b-pagination').parentNode.innerHTML =
               div.querySelector('.b-pagination');
-          }
-          //url
-          if (window.history && url) {
-            window.history.replaceState({}, '', url);
           }
           //effect
           div
