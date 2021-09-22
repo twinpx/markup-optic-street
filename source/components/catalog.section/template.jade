@@ -62,6 +62,23 @@ hr.i-line.i-size-L
     .product-item-list__more
       .btn.btn-default.btn-size-S.i-gray( data-url="/components/catalog.section/response.html?PAGEN_1=2" data-method="GET" ) Загрузить еще
 
+    hr.i-line.i-size-L
+
+    .row
+      .col-sm-6.col-sm-offset-6.text-right
+
+        .b-pagination(data-pagination-num='2')
+          .b-pagination-block
+            a(href='/catalog/solntsezashchitnye_ochki/') 1
+            a(href='/catalog/solntsezashchitnye_ochki/') 2
+            span.active 3
+            a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=4') 4
+            span ...
+            a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=90') 90
+            a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=91') 91
+            a.i-backward(href='/catalog/solntsezashchitnye_ochki/') Предыдущая
+            a.i-forward(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=3') Следующая
+
 #subscribeModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='subscribeLabel')
   .modal-dialog(role='document')
     .modal-content

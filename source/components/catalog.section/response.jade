@@ -9,3 +9,15 @@
   div
   div
   div
+
+.b-pagination(data-pagination-num='2')
+  .b-pagination-block
+    a(href='/catalog/solntsezashchitnye_ochki/') 1
+    span.active 2
+    a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=3') 3
+    a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=4') 4
+    span ...
+    a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=90') 90
+    a(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=91') 91
+    a.i-backward(href='/catalog/solntsezashchitnye_ochki/') Предыдущая
+    a.i-forward(href='/catalog/solntsezashchitnye_ochki/?PAGEN_1=3') Следующая

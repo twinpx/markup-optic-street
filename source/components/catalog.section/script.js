@@ -11,25 +11,41 @@
       var url = button.getAttribute('data-url');
       var method = button.getAttribute('data-method');
 
+      //set page url
+      window.location.search = url.substring(url.indexOf('?'));
+
       $.ajax({
         url: url,
         type: method, //GET
         dataType: 'html',
         success: function (data) {
           var div = document.createElement('div');
+          var container = button.parentNode.parentNode;
           div.innerHTML = data;
-          button.parentNode.parentNode
+          var productItemSmallCard = div.querySelector(
+            '.product-item-small-card'
+          );
+          container
             .querySelector('.product-item-small-card:last-child')
-            .after(div);
-          $(div).find('.b-catalog-element').each(catalogElementEach);
+            .after(productItemSmallCard);
+          $(productItemSmallCard)
+            .find('.b-catalog-element')
+            .each(catalogElementEach);
           //change more button
-          var buttonUrl = div
-            .querySelector('.product-item-small-card')
-            .getAttribute('data-url');
+          var buttonUrl = productItemSmallCard.getAttribute('data-url');
           if (!buttonUrl) {
             button.remove();
           } else {
             button.setAttribute('data-url', buttonUrl);
+          }
+          //pagination
+          if (container.querySelector('.b-pagination')) {
+            container.querySelector('.b-pagination').parentNode.innerHTML =
+              div.querySelector('.b-pagination');
+          }
+          //url
+          if (window.history && url) {
+            window.history.pushState({}, '', url);
           }
           //effect
           div
