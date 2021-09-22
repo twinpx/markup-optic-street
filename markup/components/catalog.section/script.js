@@ -42,8 +42,9 @@
           }
           //pagination
           if (container.querySelector('.b-pagination')) {
-            container.querySelector('.b-pagination').parentNode.innerHTML =
-              div.querySelector('.b-pagination');
+            container
+              .querySelector('.b-pagination')
+              .parentNode.replaceChildren(div.querySelector('.b-pagination'));
           }
           //effect
           div
