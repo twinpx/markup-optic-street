@@ -4,6 +4,11 @@
   $(function () {
     //$('[data-original]').lazyload();
 
+    //show elements
+    document
+      .querySelector('.product-item-small-card')
+      .classList.add('product-item-small-card--show-elements');
+
     $('.product-item-list__more .btn').click(function (e) {
       e.preventDefault();
 
@@ -47,7 +52,9 @@
               .parentNode.replaceChildren(div.querySelector('.b-pagination'));
           }
           //effect
-          productItemSmallCard.classList.add('product-item-small-card--show-elements');
+          productItemSmallCard.classList.add(
+            'product-item-small-card--show-elements'
+          );
           //scroll
           window.scrollTo({
             top: div.getBoundingClientRect().top + window.scrollY - 30,
