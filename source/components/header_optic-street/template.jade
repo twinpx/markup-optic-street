@@ -13,7 +13,7 @@ script( src="/components/header_optic-street/script.js" )
             a.ob-menu-sandwich.bj-nav-button( href='#' )
               span.bj-menu-icon( style="background-image: url( '/template/images/headers/header_optic-street/menu.svg' );" )
         
-          .col-md-9.col-sm-6.col-xs-6.bj-logo-space
+          .col-md-6.col-sm-6.col-xs-6.bj-logo-space
             span.bj-logo
               img( src='/template/images/logo-os.svg' width='220' alt='Optic Street' )
 
@@ -34,14 +34,13 @@ script( src="/components/header_optic-street/script.js" )
               |  })();
               | });
               
-              
-            span.bj-page-header__search
+          .col-md-6.col-sm-3.col-xs-3.text-right
+
+            span.bj-page-header__search.hidden-sm.hidden-xs
               form( action='/catalog/' )
                 span.bj-page-header__search-icon( style=" background-image: url( '/template/images/headers/header_optic-street/search.svg' );" )
                 input#title-search-input.bj-page-header__search__input.form-control(type='search', name='q', size='23', maxlength='50', autocomplete='off' value='' placeholder="Поиск по каталогу" )
                 input(name='s', type='hidden', value='')
-              
-          .col-md-3.col-sm-3.col-xs-3
           
             #personal_menu.bj-personal.hidden-sm.hidden-xs
               .bj-personal-icon( style="background-image: url( '/upload/logo-pomidor.jpg' );" )
@@ -50,9 +49,6 @@ script( src="/components/header_optic-street/script.js" )
               a#bx_cart_block.bj-cart-icon( href="/personal/cart/" )
                 span.b-shopping-cart( style=" background-image: url( '/template/images/headers/header_optic-street/basket.svg' );" )
                 span#bx_cart_num.bj-cart-icon__num 0
-            
-            span.bj-search-icon.hidden-sm.hidden-xs
-              span( style=" background-image: url( '/template/images/headers/header_optic-street/search.svg' );" )
                 
             a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
               span( style="background-image: url( '/template/images/headers/header_optic-street/phone.svg' );" )

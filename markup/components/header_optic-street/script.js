@@ -250,7 +250,7 @@
           });
         });
 
-      document
+      /*document
         .getElementById('title-search-input')
         .addEventListener('keyup', function () {
           if (document.getElementById('title-search-input').value !== '') {
@@ -270,7 +270,7 @@
         document
           .querySelector('.bj-page-header')
           .classList.remove('i-search-input-filled');
-      });
+      });*/
     }
 
     /*if ( window.BX ) {
