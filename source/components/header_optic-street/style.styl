@@ -17,6 +17,10 @@
       a:focus
         text-decoration none
 
+    @media(max-width 991px)
+      .col-md-6
+        position static
+
     @media(max-width 767px)
       [class^=col]
         padding 0
@@ -52,31 +56,6 @@
       width 24px
       height 24px
       margin-top 10px
-
-  @media (max-width:1200px)
-
-    .bj-page-header__search
-      &.i-active
-        .bj-page-header__search__input
-          width 620px
-
-  @media (max-width:1125px)
-    .bj-page-header__search
-      &.i-active
-        .bj-page-header__search__input
-          width 550px
-
-  @media (max-width:1065px)
-    .bj-page-header__search
-      &.i-active
-        .bj-page-header__search__input
-          width 490px
-
-  @media (max-width:770px)
-    .bj-page-header__search
-      &.i-active
-        .bj-page-header__search__input
-          width 270px
 
   .bj-page-header__dropdown
 
@@ -495,6 +474,9 @@
         
         &:focus
           box-shadow none
+
+        @media(max-width 991px)
+          width 100%
           
       &-close
         display none
@@ -553,12 +535,12 @@
             width 30px
 
       @media(max-width 991px)
-        display none
-        opacity 1
+        display block
+        position absolute
         top 60px
         left 15px
         width calc( 100vw - 30px )
-        transform(none)
+        z-index 100
 
         &__input
           background-color #F4F4F4 !important
@@ -780,7 +762,7 @@
   @media( max-width 991px )
 
     .bj-page-header
-      height 108px
+      height 115px
 
     .bj-cart-icon
       margin-left 0
