@@ -425,7 +425,7 @@
       .bj-page-header__search
         display inline-block
       
-    &.i-ready
+    /*&.i-ready
     
       .bj-page-header__search
         opacity 1
@@ -438,9 +438,10 @@
             transform( rotate( 45deg ))
             
           &:after
-            transform( rotate( -45deg ))
+            transform( rotate( -45deg ))*/
       
     &__search
+      position relative
       display inline-block
       vertical-align top
       width 300px
@@ -457,8 +458,10 @@
         background-repeat no-repeat
         background-position center center
         position absolute
+        transition(opacity .3s ease-out)
         top 9px
         right 10px
+        z-index 15
         
       &__input
         width 300px
@@ -480,14 +483,17 @@
           width 100%
           
       &-close
-        display none
+        display block
         vertical-align top
         width 16px
         height 16px
         cursor pointer
         position absolute
-        top 11px
-        right 15px
+        top 7px
+        right 10px
+        opacity 0
+        pointer-events none
+        transition(opacity .3s ease-out)
         z-index 11
         
         &:before
@@ -499,6 +505,7 @@
           position absolute
           top 9px
           right 0
+          transform( rotate( 45deg ))
         
         &:after
           content ''
@@ -509,13 +516,14 @@
           position absolute
           top 9px
           right 0
+          transform( rotate( -45deg ))
           
         &:hover
           opacity .7
 
         @media( max-width 991px )
-          top 62px
-          right 30px
+          top 12px
+          right 15px
           width 24px
           height 24px
           display block
@@ -548,6 +556,7 @@
           border-radius 4px
           padding 10px 62px 10px 15px
           height 48px
+          font-size 1rem
 
         &-icon
           top 12px
@@ -583,6 +592,19 @@
     @media (max-width:991px)
       text-align center
       position static
+
+  .i-search-input-filled
+  
+    .bj-page-header__search
+    
+      &-icon
+        opacity 0
+        pointer-events none
+
+      &-close
+        opacity 1
+        pointer-events auto
+        z-index 15
     
   div[id^=bx_incl_area]
     display inline-block

@@ -194,6 +194,30 @@
       }
     });
 
+    //Search close
+    document
+      .getElementById('title-search-input')
+      .addEventListener('keyup', function () {
+        if (document.getElementById('title-search-input').value !== '') {
+          document
+            .querySelector('.bj-page-header')
+            .classList.add('i-search-input-filled');
+        } else {
+          document
+            .querySelector('.bj-page-header')
+            .classList.remove('i-search-input-filled');
+        }
+      });
+
+    $('.bj-page-header__search-close').click(function (e) {
+      e.preventDefault();
+      document.getElementById('title-search-input').value = '';
+      document
+        .querySelector('.bj-page-header')
+        .classList.remove('i-search-input-filled');
+      document.getElementById('title-search-input').focus();
+    });
+
     //OBCatalogMenu
     if (window.matchMedia('(max-width: 1024px)').matches) {
       document
@@ -249,28 +273,6 @@
             }
           });
         });
-
-      /*document
-        .getElementById('title-search-input')
-        .addEventListener('keyup', function () {
-          if (document.getElementById('title-search-input').value !== '') {
-            document
-              .querySelector('.bj-page-header')
-              .classList.add('i-search-input-filled');
-          } else {
-            document
-              .querySelector('.bj-page-header')
-              .classList.remove('i-search-input-filled');
-          }
-        });
-
-      $('.bj-page-header__search-close').click(function (e) {
-        e.preventDefault();
-        document.getElementById('title-search-input').value = '';
-        document
-          .querySelector('.bj-page-header')
-          .classList.remove('i-search-input-filled');
-      });*/
     }
 
     /*if ( window.BX ) {

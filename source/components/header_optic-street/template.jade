@@ -41,6 +41,7 @@ script( src="/components/header_optic-street/script.js" )
                 span.bj-page-header__search-icon( style=" background-image: url( '/template/images/headers/header_optic-street/search.svg' );" )
                 input#title-search-input.bj-page-header__search__input.form-control(type='search', name='q', size='23', maxlength='50', autocomplete='off' value='' placeholder="Поиск по каталогу" )
                 input(name='s', type='hidden', value='')
+              .bj-page-header__search-close
           
             #personal_menu.bj-personal.hidden-sm.hidden-xs
               .bj-personal-icon( style="background-image: url( '/upload/logo-pomidor.jpg' );" )
@@ -52,9 +53,7 @@ script( src="/components/header_optic-street/script.js" )
                 
             a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
               span( style="background-image: url( '/template/images/headers/header_optic-street/phone.svg' );" )
-            
-            .bj-page-header__search-close
-            
+                        
     section.bj-page-header__sub.hidden-sm.hidden-xs
       .container-fluid
         .bj-page-header__sub-wrapper
