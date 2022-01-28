@@ -181,8 +181,12 @@
     position absolute
     top 0
     left 0
-    color #FF0000
-    font-size 9pt
+    color #fff
+    font-size 12px
+    font-weight bold
+    line-height 17px
+    background-color #FF0000
+    padding 0 3px
     z-index 10
 
   &__data
@@ -294,10 +298,12 @@
 
     @media(min-width 1025px)
       opacity 0
-      transition( opacity .3s ease-out )
+      transform( translateY(-20px))
+      transition( all .3s ease-out )
 
       .b-catalog-element:hover &
         opacity 1
+        transform( translateY(0))
 
     
     
@@ -562,12 +568,13 @@
         
 .b-prop
   color #fff
-  line-height 13px
-  height 13px
+  line-height 17px
+  height 17px
   padding 0 5px
-  font-size 7pt
+  font-size 12px
+  font-weight bold
   text-transform uppercase
-  margin 0 3px 3px 0
+  margin 0 5px 5px 0
   flex-shrink 0
   text-align center
   
