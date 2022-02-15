@@ -6,8 +6,10 @@
 
     //show elements
     document
-      .querySelector('.product-item-small-card')
-      .classList.add('product-item-small-card--show-elements');
+      .querySelectorAll('.product-item-small-card')
+      .forEach(function (card) {
+        card.classList.add('product-item-small-card--show-elements');
+      });
 
     $('.product-item-list__more .btn').click(function (e) {
       e.preventDefault();
