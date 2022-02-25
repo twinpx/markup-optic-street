@@ -38,8 +38,8 @@ module.exports = function( grunt ) {
             src: [
               '**/*.jade',
               '!layouts/**/*.jade',
-              '!modules/**/*.jade',
-              '!components/header_optic-street/*.jade'
+              '!modules/**/*.jade'//,
+              //'!components/header_optic-street/*.jade'
             ],
             dest: '<%= dest%>',
             ext: '.html',
@@ -59,8 +59,8 @@ module.exports = function( grunt ) {
             src: [
               '**/*.jade',
               '!layouts/**/*.jade',
-              '!modules/**/*.jade',
-              '!components/header_optic-street/*.jade'
+              '!modules/**/*.jade'//,
+              //'!components/header_optic-street/*.jade'
             ],
             dest: '<%= temp%>',
             ext: '.html',
