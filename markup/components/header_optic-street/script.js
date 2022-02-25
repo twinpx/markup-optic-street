@@ -218,95 +218,15 @@
       document.getElementById('title-search-input').focus();
     });
 
-    //OBCatalogMenu
-    if (window.matchMedia('(max-width: 1024px)').matches) {
-      document
-        .querySelectorAll('.ob-catalog-menu__link')
-        .forEach(function (elem) {
-          elem.addEventListener('click', function (e) {
-            if (elem.className.search('i-link') !== -1) {
-              return;
-            }
-            e.preventDefault();
-
-            if (
-              elem
-                .closest('.ob-catalog-menu__item')
-                .className.search('active') < 0
-            ) {
-              //slide up
-              document
-                .querySelectorAll('.ob-catalog-menu__item.active')
-                .forEach(function (menuItem) {
-                  menuItem.classList.remove('active');
-                });
-              $('.ob-catalog-menu-sub:visible').slideUp();
-            }
-
-            //show current
-            elem.closest('.ob-catalog-menu__item').classList.toggle('active');
-            $(
-              elem.parentNode.querySelector('.ob-catalog-menu-sub')
-            ).slideToggle();
-          });
-        });
-
-      document
-        .querySelectorAll('.ob-catalog-menu__title')
-        .forEach(function (elem) {
-          elem.addEventListener('click', function (e) {
-            e.preventDefault();
-            elem.classList.toggle('active');
-            $(
-              elem.parentNode.querySelector('.ob-catalog-menu__block')
-            ).slideToggle();
-
-            if (
-              document.querySelectorAll('.ob-catalog-menu__item.active').length
-            ) {
-              document
-                .querySelectorAll('.ob-catalog-menu__item.active')
-                .forEach(function (menuItem) {
-                  menuItem.classList.remove('active');
-                });
-              $('.ob-catalog-menu-sub:visible').slideUp();
-            }
-          });
-        });
-    }
-
     /*if ( window.BX ) {
       BX.addCustomEvent( "onFrameDataReceived", function () {});
     }*/
   });
 })(jQuery);
 
-window.addEventListener('load', function () {
-  document
-    .getElementById('OBCatalogMenu')
-    .querySelector('.ob-catalog-menu__title')
-    .addEventListener('click', clickTitle);
-  fetchMobileMenu();
-});
+window.addEventListener('load', fetchMobileMenu);
 window.addEventListener('resize', fetchMobileMenu);
 window.fetchMobileMenuFlag;
-
-function clickTitle(e) {
-  e.preventDefault();
-  e.target.classList.toggle('active');
-  $(e.target.parentNode.querySelector('.ob-catalog-menu__block')).slideToggle();
-
-  if (
-    e.target.parentNode.querySelectorAll('.ob-catalog-menu__item.active').length
-  ) {
-    e.target.parentNode
-      .querySelectorAll('.ob-catalog-menu__item.active')
-      .forEach(function (menuItem) {
-        menuItem.classList.remove('active');
-      });
-    $('.ob-catalog-menu-sub:visible').slideUp();
-  }
-}
 
 function fetchMobileMenu() {
   if (
@@ -331,12 +251,15 @@ function fetchMobileMenu() {
             .querySelectorAll('.ob-catalog-menu__link')
             .forEach(function (elem) {
               elem.addEventListener('click', function (e) {
+                if (elem.classList.contains('i-link')) {
+                  return;
+                }
                 e.preventDefault();
 
                 if (
-                  elem
+                  !elem
                     .closest('.ob-catalog-menu__item')
-                    .className.search('active') < 0
+                    .classList.contains('active')
                 ) {
                   //slide up
                   mobileMenu
@@ -355,12 +278,6 @@ function fetchMobileMenu() {
                   elem.parentNode.querySelector('.ob-catalog-menu-sub')
                 ).slideToggle();
               });
-            });
-
-          mobileMenu
-            .querySelectorAll('.ob-catalog-menu__title')
-            .forEach(function (elem) {
-              elem.addEventListener('click', clickTitle);
             });
         }
       } catch (err) {
