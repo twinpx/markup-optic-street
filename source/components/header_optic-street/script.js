@@ -2,6 +2,26 @@
   'use strict';
 
   $(function () {
+    //gallery
+    document
+      .querySelectorAll('.bj-page-header__sub-menu__gallery')
+      .forEach((galleryBlock) => {
+        const container = galleryBlock.querySelector('.swiper-container');
+        if (container) {
+          new Swiper(container, {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        }
+      });
+
     //header search
     $('.bj-search-icon').click(function () {
       $('.bj-page-header').addClass('i-search');
@@ -40,6 +60,8 @@
     });
 
     //header dropdown
+    const headerOS = document.querySelector('#headerOS');
+    let overTimeoutId;
     document
       .querySelectorAll('.bj-page-header__sub-item.i-menu')
       .forEach(function (item) {
@@ -64,15 +86,25 @@
           const subMenu = item.querySelector('.bj-page-header__sub-menu');
 
           subMenu.classList.add('i-show');
+          headerOS.classList.add('i-show-submenu');
           setTimeout(function () {
             subMenu.classList.add('i-visible');
+          }, 100);
+          clearTimeout(overTimeoutId);
+          overTimeoutId = setTimeout(function () {
+            headerOS.classList.add('i-visible-submenu');
           }, 100);
         });
         item.addEventListener('mouseleave', function (e) {
           const subMenu = item.querySelector('.bj-page-header__sub-menu');
           subMenu.classList.remove('i-visible');
+          headerOS.classList.remove('i-visible-submenu');
           setTimeout(function () {
             subMenu.classList.remove('i-show');
+          }, 300);
+          clearTimeout(overTimeoutId);
+          overTimeoutId = setTimeout(function () {
+            headerOS.classList.remove('i-show-submenu');
           }, 300);
         });
       });

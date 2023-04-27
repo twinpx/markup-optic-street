@@ -5,6 +5,27 @@
   
 #headerOS
   position relative
+  z-index 1000
+
+  header
+    position relative
+    z-index 998
+  
+  &.i-show-submenu:before
+    content ''
+    display block
+    position fixed
+    top 0
+    left 0
+    background-color #34343480
+    width 100vw
+    height 100vh
+    opacity 0
+    transition( opacity .5s ease )
+    z-index 10
+
+  &.i-visible-submenu:before
+    opacity 1
 
   .bj-page-header__top
     padding 10px 0 0
@@ -290,14 +311,44 @@
             margin 0 0 8px
             list-style-type none !important
 
-        .col-sm-4 ul
-          -webkit-columns 2
-          columns 2
-          -webkit-column-gap 30px
-          column-gap 30px
+        &__content
+          display grid
+          column-gap 20px
+          grid-template-columns calc(100% / 7 * 5 - 10px) calc(100% / 7 * 2 - 10px)
+
+        &__links
+          display grid
+          column-gap 20px
+          grid-template-columns calc(60% - 10px) calc(40% - 10px)
+
+          @media(max-width 1199px)
+            grid-template-columns repeat(2, calc(50% - 10px))
+
+          &-cols
+            padding-bottom 30px
+            position relative
+        
+            &:first-child ul
+              -webkit-columns 3
+              columns 3
+              column-gap 20px
+
+              @media(max-width 1199px)
+                -webkit-columns 2
+                columns 2
+
+            &:last-child ul
+              -webkit-columns 2
+              columns 2
+              column-gap 20px
 
         .col-sm-6 a
           display block
+
+        &__bottom-link
+          position absolute
+          bottom 0
+          left 0
 
         img
           width 100%
@@ -306,6 +357,51 @@
 
         .text-center
           display block
+
+        &__gallery
+          min-height 400px
+          //width 350px
+
+          .swiper-container
+            width 100%
+            height 100%
+
+          .swiper-slide
+          
+            a
+              display block
+              width 100%
+              height 100%
+              background-repeat no-repeat
+              background-position center
+              background-size cover
+
+            span
+              position absolute
+              bottom 10%
+              left 0
+              width 100%
+              font-size 12px
+              color #000
+              font-family 'Open Sans', Arial, sans-serif
+
+          .swiper-button-next,
+          .swiper-button-prev
+
+            &:after
+              font-size 16px
+              font-weight bold
+              color #000
+
+          .swiper-pagination-bullet
+            width 6px
+            height 6px
+            background-color #e8e8e8
+            margin-right 3px
+            margin-left 3px
+
+            &.swiper-pagination-bullet-active
+              background-color #000
           
     .bj-nav-button,
     .bj-top-nav a,

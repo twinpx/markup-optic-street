@@ -1,28 +1,41 @@
 // start /components/header-address/
 
 link( rel="stylesheet", href="/components/header-address/style.css" )
+script( src="/components/header-address/script.js" )
 
 span.bj-header-address.visible-lg-inline-block( style="opacity: 0; display: none;" )
-  span.bj-header-address__title Шоурум на Б.Бронной
+  span.bj-header-address__title.dashed Шоурум на Б.Бронной
   span.bj-header-address__location Москва
   span.bj-header-address__phone +7 985 226 33 63
 
   span.bj-header-address__dropdown
-    span
-      b Шоурум на Б.Бронной
-      i Москва
-      span +7 985 226 33 63
-    span
-      b Остров в ТРЦ Европейский, 2 этаж
-      i Москва
-      span +7 985 226 33 63
-    span
-      b Инетрнет-магазин
-      i Москва
-      span +7 985 226 33 63
-    span
-      b Шоурум на Б.Бронной
-      i Москва
-      span +7 985 226 33 63
+    span.bj-header-address__row
+      span.bj-header-address__showrooms
+        span
+          b Шоурум на Б.Бронной
+          i Москва
+          span +7 985 226 33 63
+        span
+          b Остров в ТРЦ Европейский, 2 этаж
+          i Москва
+          span +7 985 226 33 63
+        span
+          b Инетрнет-магазин
+          i Москва
+          span +7 985 226 33 63
+        span
+          b Шоурум на Б.Бронной
+          i Москва
+          span +7 985 226 33 63
+          
+      span.bj-header-address__delivery
+        b Доставка в города
+        span.bj-header-address__row
+          span.bj-header-address__col
+            | Москва<br>Санкт-Петербург<br>Нижний Новгород<br>Краснодар<br>Екатеринбург<br>Новосибирск<br>Ростов-на-Дону
+          span.bj-header-address__col
+            | Самара<br>Челябинск<br>Сочи<br>Воронеж<br>Казань<br>Волгоград<br>Уфа
+          span.bj-header-address__col
+            | Саратов<br>Балашиха<br>Химки<br>Омск<br>Одинцово<br>Мытищи<br>Подольск
 
 // end /components/header-address/

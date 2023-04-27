@@ -6,7 +6,8 @@
     width 750px
 
 .modal-backdrop
-  background #fff
+  background #34343480
+  opacity 1
 
 .modal-content
   border-radius 0
@@ -71,3 +72,41 @@ h2.modal-title
 
 .modal-dialog
   z-index 1041
+
+.modal.modal--shadow
+
+  .modal-content
+    border none
+    box-shadow(0px 3px 6px #00000029)
+
+  .modal-header
+    padding-left 37px
+    padding-right 37px
+    text-align left
+    border-bottom none
+
+  .modal-body
+    padding-left 37px
+    padding-right 37px
+
+  @media(max-width: 767px)
+
+    .modal-open .modal
+      padding-right 0 !important
+
+    .modal-dialog
+      margin 0
+      height 100vh
+
+    .modal-content
+      box-shadow none
+      min-height 100vh
+      overflow auto
+
+    .modal-body,
+    .modal-header
+      padding 20px
+
+    .modal .close
+      top 20px
+      right 20px

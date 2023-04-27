@@ -1,0 +1,96 @@
+// start /components/big-gallery/
+
+link( rel="stylesheet", href="/components/big-gallery/style.css" )
+script( src="/components/big-gallery/script.js" )
+
+.container-fluid
+
+  style
+    | .slr-main-gallery .swiper-button-next:after,
+    | .slr-main-gallery .swiper-button-prev:after {
+    |   color: blueviolet;
+    | }
+    | .slr-main-gallery .swiper-pagination-bullet {
+    |   border: 1px solid blueviolet;
+    | }
+    | .slr-main-gallery .swiper-pagination-bullet-active {
+    |   background-color: blueviolet;
+    | }
+    | .slr-main-gallery .swiper-timer {
+    |   border-top: 1px solid blueviolet;
+    | }
+    | .slr-main-gallery .swiper-lazy-preloader {
+    |   border-right-color: blueviolet;
+    |   border-bottom-color: blueviolet;
+    |   border-left-color: blueviolet;
+    | }
+
+  .slr-main-gallery(style='min-height: 500px; background-color: #f2f2f2')
+    .swiper(data-delay='5000')
+      .swiper-wrapper
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/1.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/10.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/2.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/9.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/3.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/8.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/4.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/7.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/5.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/6.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/6.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/5.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/7.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/4.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/8.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/3.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/9.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/2.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+        a.swiper-slide(href='')
+          picture
+            source(media='(min-width: 768px)' srcset='/upload/big-gallery/10.jpg')
+            source(media='(max-width: 767px)' srcset='/upload/big-gallery/1.jpg')
+            img.swiper-lazy(src='/upload/big-gallery/1.jpg' alt='')
+            span.swiper-lazy-preloader
+      .swiper-pagination
+      .swiper-button-prev
+      .swiper-button-next
+      .swiper-timer
+
+// end /components/big-gallery/

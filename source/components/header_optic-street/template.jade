@@ -1,5 +1,8 @@
 // start /components/header_optic-street/
 
+link( rel="stylesheet", href="/template/libs/swiper-bundle.min.css" )
+script( src="/template/libs/swiper-bundle.min.js" )
+
 link( rel="stylesheet", href="/components/header_optic-street/style.css" )
 script( src="/components/header_optic-street/script.js" )
 
@@ -20,7 +23,10 @@ script
             span.bj-logo
               img( src='/template/images/logo-os.svg' width='220' alt='Optic Street' )
 
-            script
+            span 
+              include ../../components/header-address/template
+
+            //-script
               | window.addEventListener('load', () => {
               |  //load header-address
               |  (async () => {

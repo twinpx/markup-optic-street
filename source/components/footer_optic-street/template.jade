@@ -7,6 +7,9 @@ script window.footerMenuAjaxPath = '/components/footer_optic-street/fetch.html';
 
 #footer-mobile
   #OBFooterCatalogMenu
+  hr
+  p
+    a(href='#' data-toggle='modal' data-target='#brandsModal') Брендовая оптика
   p Optic Street — магазин брендовых очков с 2011 года.
   p Шоурум на Б.Бронной
   p Москва, Большая Бронная, 23с1, офис 104
@@ -35,6 +38,8 @@ footer.bj-page-footer
           a(href='/catalog/opravy/') Оправы
         li
           a(href='/archive/') Архив
+        li
+          a(href='#' data-toggle='modal' data-target='#brandsModal') Брендовая оптика
         li
           a(href='/about/') О магазине
         li
@@ -91,6 +96,93 @@ footer.bj-page-footer
       span(style='background-image: url(/upload/iblock/007/bhb2pag441fu73yyleajxexu34fuqbpw.png)')
       span(style='background-image: url(/upload/iblock/595/zhl5gs95nlhb2e8bc4zt6k2f38o5737h.png)')
       span(style='background-image: url(/upload/iblock/443/d79917ecaqd3oksh3np2442wy44omftt.png)')
+
+#brandsModal.modal.modal--shadow.fade(tabindex='-1', role='dialog', aria-labelledby='brandsModalLabel')
+  .modal-dialog(role='document')
+    .modal-content
+
+      form( action="/about/contacts/" method="POST" )
+
+        .modal-header
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+          |                   
+          h2#brandsModalLabel.modal-title Брендовая оптика
+
+        .modal-body
+
+          #brandsModalContnent
+
+            div Alexander Mcqueen
+            div Andy Wolf
+            div Balenciaga
+            div Belstaff
+            div Blumarine
+            div Bottega Veneta
+            div Boucheron
+            div Brevno
+            div Brioni
+            div Burberry
+            div Bvlgari
+            div Carolina Herrera
+            div Cartier
+            div Celine
+            div Chloe
+            div Chopard
+            div Dackor
+            div Dior
+            div Dita
+            div Elie saab
+            div Ermenegildo Zegna
+            div Etnia Barcelona
+            div Exchange Armani
+            div Fakoshima
+            div Fendi
+            div For Art’s Sake
+            div Fred
+            div George Keburia
+            div Giorgio Armani
+            div Givenchy
+            div Gucci
+            div Hugo Boss
+            div Ic berlin
+            div Isabel Marant
+            div Jaguar
+            div Jimmy Choo
+            div Kaleos
+            div Karl Lagerfeld
+            div Kenzo
+            div Kreuzbergkinder
+            div Linda Farrow
+            div Loewe
+            div Mario Rossi
+            div Marni
+            div Maybach
+            div Megapolis
+            div Michael Fors
+            div Miu Miu
+            div Montblanc
+            div Moschino
+            div Mykita
+            div Oakley
+            div Oliver
+            div Peoples
+            div Pepe Jeans
+            div Persol
+            div Pomellato
+            div Porsche Design
+            div Saint Laurent
+            div Salvatore Ferragamo
+            div Serengeti
+            div Silhouette
+            div Stella Mccartney
+            div Swarovski
+            div Ted Baker
+            div Tiffany
+            div Timberland
+            div Tom Ford
+            div Tommy Hilfiger
+            div Valentino
+            div Zilli
 
 include ../../modules/preloader/include
 

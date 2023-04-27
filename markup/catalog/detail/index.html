@@ -8,6 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
     <link rel="stylesheet" href="/template/template_styles.css">
     <link rel="stylesheet" href="/template/custom.css">
+    <style>.container-fluid {max-width: 1500px !important;}</style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
@@ -27,6 +28,8 @@
   </head>
   <body>
     <!-- start /components/header_optic-street/-->
+    <link rel="stylesheet" href="/template/libs/swiper-bundle.min.css">
+    <script src="/template/libs/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/components/header_optic-street/style.css">
     <script src="/components/header_optic-street/script.js"></script>
     <script>window.menuAjaxPath = '/components/header_optic-street/header-menu-mobile.html'</script>
@@ -36,24 +39,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-xs-3 col-sm-3 visible-sm-block visible-xs-block"><a href="#" class="ob-menu-sandwich bj-nav-button"><span style="background-image: url( '/template/images/headers/header_optic-street/menu.svg' );" class="bj-menu-icon"></span></a></div>
-              <div class="col-md-6 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img src="/template/images/logo-os.svg" width="220" alt="Optic Street"></span>
-                <script>
-                  window.addEventListener('load', () => {
-                   //load header-address
-                   (async () => {
-                     try {
-                       let response = await fetch(`/components/header-address/template.html`);
-                      let html = await response.text();
-                      const headerAddress = document.createElement('span');
-                      headerAddress.innerHTML = html;
-                      document.querySelector('.bj-logo').after(headerAddress);
-                      let s = document.createElement('script'); s.src = "/components/header-address/script.js"; document.head.appendChild(s);
-                    } catch (err) {
-                      throw err;
-                    }
-                   })();
-                  });
-                </script>
+              <div class="col-md-6 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img src="/template/images/logo-os.svg" width="220" alt="Optic Street"></span><span> 
+                  <!-- start /components/header-address/-->
+                  <link rel="stylesheet" href="/components/header-address/style.css">
+                  <script src="/components/header-address/script.js"></script><span style="opacity: 0; display: none;" class="bj-header-address visible-lg-inline-block"><span class="bj-header-address__title dashed">Шоурум на Б.Бронной</span><span class="bj-header-address__location">Москва</span><span class="bj-header-address__phone">+7 985 226 33 63</span><span class="bj-header-address__dropdown"><span class="bj-header-address__row"><span class="bj-header-address__showrooms"><span><b>Шоурум на Б.Бронной</b><i>Москва</i><span>+7 985 226 33 63</span></span><span><b>Остров в ТРЦ Европейский, 2 этаж</b><i>Москва</i><span>+7 985 226 33 63</span></span><span><b>Инетрнет-магазин</b><i>Москва</i><span>+7 985 226 33 63</span></span><span><b>Шоурум на Б.Бронной</b><i>Москва</i><span>+7 985 226 33 63</span></span></span><span class="bj-header-address__delivery"><b>Доставка в города</b><span class="bj-header-address__row"><span class="bj-header-address__col">Москва<br>Санкт-Петербург<br>Нижний Новгород<br>Краснодар<br>Екатеринбург<br>Новосибирск<br>Ростов-на-Дону</span><span class="bj-header-address__col">Самара<br>Челябинск<br>Сочи<br>Воронеж<br>Казань<br>Волгоград<br>Уфа</span><span class="bj-header-address__col">Саратов<br>Балашиха<br>Химки<br>Омск<br>Одинцово<br>Мытищи<br>Подольск</span></span></span></span></span></span>
+                  <!-- end /components/header-address/--></span>
               </div>
               <div class="col-md-6 col-sm-3 col-xs-3 text-right"><span class="bj-page-header__search">
                   <form action="/catalog/"><span style=" background-image: url( '/template/images/headers/header_optic-street/search.svg' );" class="bj-page-header__search-icon"></span>
@@ -73,67 +63,80 @@
             <div class="bj-page-header__sub-wrapper">
               <div class="bj-page-header__sub-item i-menu"><a href="/catalog/">Солнцезащитные очки</a>
                 <div class="bj-page-header__sub-menu">
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <div class="h5">Бренды</div>
-                      <ul> 
-                        <li> <a href="">Ray-Ban</a></li>
-                        <li> <a href="">Dolce & Gabbana</a></li>
-                        <li> <a href="">Prada</a></li>
-                        <li> <a href="">Miu Miu</a></li>
-                        <li> <a href="">Vogue</a></li>
-                        <li> <a href="">Emporio Armani</a></li>
-                        <li> <a href="">Armani Exchange</a></li>
-                        <li> <a href="">Carrera</a></li>
-                        <li> <a href="">Polaroid</a></li>
-                        <li> <a href="">Versace</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="h5">Популярные модели</div>
-                      <ul> 
-                        <li> <a href="">Новая коллекция 2020</a></li>
-                        <li> <a href="">Ray Ban оригинал</a></li>
-                        <li> <a href="">Мужские</a></li>
-                        <li> <a href="">Женские</a></li>
-                        <li> <a href="">Зеркальные</a></li>
-                        <li> <a href="">Детские</a></li>
-                        <li> <a href="">GiGi Hadid</a></li>
-                        <li> <a href="">Недорогие очки</a></li>
-                        <li> <a href="">Круглые</a></li>
-                        <li> <a href="">Брендовые</a></li>
-                        <li> <a href="">Из поликарбоната</a></li>
-                        <li> <a href="">Фотохромные</a></li>
-                        <li> <a href="">Женские Ray Ban</a></li>
-                        <li> <a href="">Капли</a></li>
-                        <li> <a href="">Стеклянные</a></li>
-                        <li> <a href="">Бабочки</a></li>
-                        <li> <a href="">Кошачий глаз</a></li>
-                        <li> <a href="">Градиентные</a></li>
-                        <li> <a href="">Поляризационные</a></li>
-                        <li> <a href="">Большие</a></li>
-                        <li> <a href="">Новинки Ray Ban</a></li>
-                        <li> <a href="">Авиаторы</a></li>
-                        <li> <a href="">Антибликовые</a></li>
-                        <li> <a href="">Круглые мужские</a></li>
-                        <li> <a href="">Из натуральной кожи</a></li>
-                        <li> <a href="">Овальные</a></li>
-                        <li> <a href="">Для водителя</a></li>
-                        <li> <a href="">Спортивные</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="h5">Коллекции</div>
-                      <div class="row"> 
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
+                  <div class="bj-page-header__sub-menu__content">
+                    <div class="bj-page-header__sub-menu__links">
+                      <div class="bj-page-header__sub-menu__links-cols">
+                        <div class="h5">Бренды</div>
+                        <ul> 
+                          <li> <a href="">Ray-Ban</a></li>
+                          <li> <a href="">Dolce & Gabbana</a></li>
+                          <li> <a href="">Prada</a></li>
+                          <li> <a href="">Miu Miu</a></li>
+                          <li> <a href="">Vogue</a></li>
+                          <li> <a href="">Emporio Armani</a></li>
+                          <li> <a href="">Armani Exchange</a></li>
+                          <li> <a href="">Carrera</a></li>
+                          <li> <a href="">Polaroid</a></li>
+                          <li> <a href="">Versace</a></li>
+                          <li> <a href="">Ray-Ban</a></li>
+                          <li> <a href="">Dolce & Gabbana</a></li>
+                          <li> <a href="">Prada</a></li>
+                          <li> <a href="">Miu Miu</a></li>
+                          <li> <a href="">Vogue</a></li>
+                          <li> <a href="">Emporio Armani</a></li>
+                          <li> <a href="">Armani Exchange</a></li>
+                          <li> <a href="">Carrera</a></li>
+                          <li> <a href="">Polaroid</a></li>
+                          <li> <a href="">Versace</a></li>
+                          <li> <a href="">Ray-Ban</a></li>
+                          <li> <a href="">Dolce & Gabbana</a></li>
+                          <li> <a href="">Prada</a></li>
+                        </ul><a href="" class="bj-page-header__sub-menu__bottom-link">Все бренды</a>
                       </div>
-                      <hr>
-                      <div class="row"> 
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
-                        <div class="col-sm-4"><a href=""><img src="/upload/1.jpg" alt=""><span class="text-center">Ray-Ban Aviator</span></a></div>
+                      <div class="bj-page-header__sub-menu__links-cols">
+                        <div class="h5">Популярные модели</div>
+                        <ul> 
+                          <li> <a href="">Новая коллекция 2023</a></li>
+                          <li> <a href="">Ray Ban оригинал</a></li>
+                          <li> <a href="">Мужские</a></li>
+                          <li> <a href="">Женские</a></li>
+                          <li> <a href="">Зеркальные</a></li>
+                          <li> <a href="">Детские</a></li>
+                          <li> <a href="">GiGi Hadid</a></li>
+                          <li> <a href="">Недорогие очки</a></li>
+                          <li> <a href="">Круглые</a></li>
+                          <li> <a href="">Брендовые</a></li>
+                          <li> <a href="">Из поликарбоната</a></li>
+                          <li> <a href="">Фотохромные</a></li>
+                          <li> <a href="">Женские Ray Ban</a></li>
+                          <li> <a href="">Капли</a></li>
+                          <li> <a href="">Стеклянные</a></li>
+                          <li> <a href="">Бабочки</a></li>
+                          <li> <a href="">Кошачий глаз</a></li>
+                          <li> <a href="">Градиентные</a></li>
+                          <li> <a href="">Поляризационные</a></li>
+                          <li> <a href="">Большие</a></li>
+                          <li> <a href="">Новинки Ray Ban</a></li>
+                          <li> <a href="">Авиаторы</a></li>
+                          <li> <a href="">Антибликовые</a></li>
+                          <li> <a href="">Круглые мужские</a></li>
+                          <li> <a href="">Из натуральной кожи</a></li>
+                          <li> <a href="">Овальные</a></li>
+                          <li> <a href="">Для водителя</a></li>
+                          <li> <a href="">Спортивные</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bj-page-header__sub-menu__gallery">
+                      <div class="swiper-container swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"> <a href="" style="background-image: url('/upload/1.jpg');"></a><span class="text-center">Ray-Ban Aviator</span></div>
+                          <div class="swiper-slide"> <a href="" style="background-image: url('/upload/1.jpg');"></a><span class="text-center">Ray-Ban Aviator</span></div>
+                          <div class="swiper-slide"> <a href="" style="background-image: url('/upload/1.jpg');"></a><span class="text-center">Ray-Ban Aviator</span></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                       </div>
                     </div>
                   </div>
@@ -1685,6 +1688,8 @@
     <script>window.footerMenuAjaxPath = '/components/footer_optic-street/fetch.html';</script>
     <div id="footer-mobile">
       <div id="OBFooterCatalogMenu"></div>
+      <hr>
+      <p><a href="#" data-toggle="modal" data-target="#brandsModal">Брендовая оптика</a></p>
       <p>Optic Street — магазин брендовых очков с 2011 года.</p>
       <p>Шоурум на Б.Бронной</p>
       <p>Москва, Большая Бронная, 23с1, офис 104</p>
@@ -1702,6 +1707,7 @@
             <li><a href="/catalog/solntsezashchitnye_ochki/">Солнцезащитные очки</a></li>
             <li><a href="/catalog/opravy/">Оправы</a></li>
             <li><a href="/archive/">Архив</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#brandsModal">Брендовая оптика</a></li>
             <li><a href="/about/">О магазине</a></li>
             <li><a href="/shops/">Магазины</a></li>
             <li><a href="/about/contacts/">Контакты</a></li>
@@ -1735,6 +1741,93 @@
         <div class="bj-page-footer__payment"><span style="background-image: url(/upload/iblock/007/bhb2pag441fu73yyleajxexu34fuqbpw.png)"></span><span style="background-image: url(/upload/iblock/595/zhl5gs95nlhb2e8bc4zt6k2f38o5737h.png)"></span><span style="background-image: url(/upload/iblock/443/d79917ecaqd3oksh3np2442wy44omftt.png)"></span></div>
       </div>
     </footer>
+    <div id="brandsModal" tabindex="-1" role="dialog" aria-labelledby="brandsModalLabel" class="modal modal--shadow fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <form action="/about/contacts/" method="POST">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>                  
+              <h2 id="brandsModalLabel" class="modal-title">Брендовая оптика</h2>
+            </div>
+            <div class="modal-body">
+              <div id="brandsModalContnent">
+                <div>Alexander Mcqueen</div>
+                <div>Andy Wolf</div>
+                <div>Balenciaga</div>
+                <div>Belstaff</div>
+                <div>Blumarine</div>
+                <div>Bottega Veneta</div>
+                <div>Boucheron</div>
+                <div>Brevno</div>
+                <div>Brioni</div>
+                <div>Burberry</div>
+                <div>Bvlgari</div>
+                <div>Carolina Herrera</div>
+                <div>Cartier</div>
+                <div>Celine</div>
+                <div>Chloe</div>
+                <div>Chopard</div>
+                <div>Dackor</div>
+                <div>Dior</div>
+                <div>Dita</div>
+                <div>Elie saab</div>
+                <div>Ermenegildo Zegna</div>
+                <div>Etnia Barcelona</div>
+                <div>Exchange Armani</div>
+                <div>Fakoshima</div>
+                <div>Fendi</div>
+                <div>For Art’s Sake</div>
+                <div>Fred</div>
+                <div>George Keburia</div>
+                <div>Giorgio Armani</div>
+                <div>Givenchy</div>
+                <div>Gucci</div>
+                <div>Hugo Boss</div>
+                <div>Ic berlin</div>
+                <div>Isabel Marant</div>
+                <div>Jaguar</div>
+                <div>Jimmy Choo</div>
+                <div>Kaleos</div>
+                <div>Karl Lagerfeld</div>
+                <div>Kenzo</div>
+                <div>Kreuzbergkinder</div>
+                <div>Linda Farrow</div>
+                <div>Loewe</div>
+                <div>Mario Rossi</div>
+                <div>Marni</div>
+                <div>Maybach</div>
+                <div>Megapolis</div>
+                <div>Michael Fors</div>
+                <div>Miu Miu</div>
+                <div>Montblanc</div>
+                <div>Moschino</div>
+                <div>Mykita</div>
+                <div>Oakley</div>
+                <div>Oliver</div>
+                <div>Peoples</div>
+                <div>Pepe Jeans</div>
+                <div>Persol</div>
+                <div>Pomellato</div>
+                <div>Porsche Design</div>
+                <div>Saint Laurent</div>
+                <div>Salvatore Ferragamo</div>
+                <div>Serengeti</div>
+                <div>Silhouette</div>
+                <div>Stella Mccartney</div>
+                <div>Swarovski</div>
+                <div>Ted Baker</div>
+                <div>Tiffany</div>
+                <div>Timberland</div>
+                <div>Tom Ford</div>
+                <div>Tommy Hilfiger</div>
+                <div>Valentino</div>
+                <div>Zilli</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div id="circlePreloader">
       <div class="preloader-wrapper active">
         <div class="spinner-layer">
